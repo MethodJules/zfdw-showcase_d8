@@ -1,0 +1,29 @@
+uuid: 8aea6d79-b074-4cc4-a1d6-c78af85b6303
+langcode: de
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_forschungsergebnis
+    - field.field.comment.comment_node_forschungsergebnis.comment_body
+  module:
+    - text
+id: comment.comment_node_forschungsergebnis.default
+targetEntityType: comment
+bundle: comment_node_forschungsergebnis
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

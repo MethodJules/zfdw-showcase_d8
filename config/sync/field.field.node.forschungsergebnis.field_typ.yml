@@ -1,0 +1,26 @@
+uuid: d12b23f7-6eda-4b76-9ab4-9985975f462a
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_typ
+    - node.type.forschungsergebnis
+    - taxonomy.vocabulary.tax_morp_m_forschungsergebnist
+id: node.forschungsergebnis.field_typ
+field_name: field_typ
+entity_type: node
+bundle: forschungsergebnis
+label: Typ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tax_morp_m_forschungsergebnist: tax_morp_m_forschungsergebnist
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

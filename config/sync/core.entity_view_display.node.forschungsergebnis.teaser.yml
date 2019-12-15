@@ -1,0 +1,52 @@
+uuid: 649022f7-f1f7-440b-8b9e-63022f4174e0
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.forschungsergebnis.body
+    - field.field.node.forschungsergebnis.field_adressatenkreis
+    - field.field.node.forschungsergebnis.field_einschlaegige_disziplinen
+    - field.field.node.forschungsergebnis.field_forschungsstatus
+    - field.field.node.forschungsergebnis.field_forschungsthemen
+    - field.field.node.forschungsergebnis.field_keywords_fe
+    - field.field.node.forschungsergebnis.field_link_fe
+    - field.field.node.forschungsergebnis.field_praxiseinsatz
+    - field.field.node.forschungsergebnis.field_publication
+    - field.field.node.forschungsergebnis.field_sonstiges_fe
+    - field.field.node.forschungsergebnis.field_typ
+    - node.type.forschungsergebnis
+  module:
+    - text
+    - user
+id: node.forschungsergebnis.teaser
+targetEntityType: node
+bundle: forschungsergebnis
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_adressatenkreis: true
+  field_einschlaegige_disziplinen: true
+  field_forschungsstatus: true
+  field_forschungsthemen: true
+  field_keywords_fe: true
+  field_link_fe: true
+  field_praxiseinsatz: true
+  field_publication: true
+  field_sonstiges_fe: true
+  field_typ: true
+  langcode: true
+  search_api_excerpt: true

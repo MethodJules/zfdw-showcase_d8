@@ -1,0 +1,23 @@
+uuid: 3b585203-5865-40a1-94d0-f48359442aa1
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.forschungsergebnis
+  module:
+    - text
+id: node.forschungsergebnis.body
+field_name: body
+entity_type: node
+bundle: forschungsergebnis
+label: Beschreibung
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

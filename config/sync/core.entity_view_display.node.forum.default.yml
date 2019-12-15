@@ -1,0 +1,33 @@
+uuid: 8a948ee6-ad60-4766-a163-06c5dde2ace6
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_forum.default
+    - field.field.node.forum.comment_forum
+    - node.type.forum
+  module:
+    - comment
+    - user
+id: node.forum.default
+targetEntityType: node
+bundle: forum
+mode: default
+content:
+  comment_forum:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

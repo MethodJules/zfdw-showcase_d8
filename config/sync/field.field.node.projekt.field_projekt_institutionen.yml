@@ -1,0 +1,30 @@
+uuid: 91a660d2-e6ad-4714-84ed-763bcd45ae9c
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_projekt_institutionen
+    - node.type.institution
+    - node.type.projekt
+id: node.projekt.field_projekt_institutionen
+field_name: field_projekt_institutionen
+entity_type: node
+bundle: projekt
+label: 'Zugehörige Institutionen'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      institution: institution
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

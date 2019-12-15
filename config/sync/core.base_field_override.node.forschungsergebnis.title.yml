@@ -1,0 +1,18 @@
+uuid: afc177eb-d922-4183-beb1-7e746bf0810d
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.forschungsergebnis
+id: node.forschungsergebnis.title
+field_name: title
+entity_type: node
+bundle: forschungsergebnis
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: b692cc3e-845d-4bcd-8901-3cdd7ffd340a
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.institution
+  module:
+    - link
+id: node.institution.field_link
+field_name: field_link
+entity_type: node
+bundle: institution
+label: Webseite
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

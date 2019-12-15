@@ -1,0 +1,8 @@
+uuid: 2e4e1cd9-f6a0-4a25-85b3-0ce8d0ce15d1
+langcode: de
+status: true
+dependencies: {  }
+id: comment_node_institution
+label: 'Institution comment'
+target_entity_type_id: node
+description: null

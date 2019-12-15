@@ -1,0 +1,19 @@
+uuid: ee8558e0-6822-4ae6-9d9c-d57ce960ab7a
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_praxiseinsatz
+field_name: field_praxiseinsatz
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

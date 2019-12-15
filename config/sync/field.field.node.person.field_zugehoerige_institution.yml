@@ -1,0 +1,30 @@
+uuid: e37fdaa9-79c9-416a-81ed-9d788db49e24
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zugehoerige_institution
+    - node.type.institution
+    - node.type.person
+id: node.person.field_zugehoerige_institution
+field_name: field_zugehoerige_institution
+entity_type: node
+bundle: person
+label: 'Zugehörige Institution'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      institution: institution
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

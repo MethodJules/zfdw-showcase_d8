@@ -1,0 +1,30 @@
+uuid: 421106cc-e27b-43b8-8694-54d6b0d3a632
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zugehoerige_publikationen
+    - node.type.biblio
+    - node.type.person
+id: node.person.field_zugehoerige_publikationen
+field_name: field_zugehoerige_publikationen
+entity_type: node
+bundle: person
+label: 'Zugehörige Publikationen'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      biblio: biblio
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

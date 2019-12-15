@@ -1,0 +1,19 @@
+uuid: 950121c6-b89b-45f3-9011-1cb5152c1080
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_methoden_und_werkzeuge
+field_name: field_methoden_und_werkzeuge
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

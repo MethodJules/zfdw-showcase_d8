@@ -1,0 +1,9 @@
+uuid: b2373f47-115e-487a-8e9d-80846cb01b32
+langcode: de
+status: true
+dependencies: {  }
+id: portalprojekt
+label: Portalprojekt
+weight: 3
+is_admin: null
+permissions: {  }

@@ -1,0 +1,18 @@
+uuid: 48336e9c-3fab-4871-9224-847ad168cf3c
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.kooperationspartner
+id: node.kooperationspartner.title
+field_name: title
+entity_type: node
+bundle: kooperationspartner
+label: 'Name des Kooperationspartners'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

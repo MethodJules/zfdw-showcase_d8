@@ -1,0 +1,39 @@
+uuid: da023d0f-5bd7-44cf-bfa4-c191c8a1f2f2
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.fachbereich.body
+    - field.field.node.fachbereich.field_institutionen
+    - node.type.fachbereich
+  module:
+    - text
+    - user
+id: node.fachbereich.default
+targetEntityType: node
+bundle: fachbereich
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_institutionen:
+    label: above
+    weight: 1
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

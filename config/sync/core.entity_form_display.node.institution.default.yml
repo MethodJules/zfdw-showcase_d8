@@ -1,0 +1,106 @@
+uuid: 36dfecbb-f933-4fad-bee8-38b46c283abe
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.institution.field_adresse
+    - field.field.node.institution.field_ansprechpartner
+    - field.field.node.institution.field_link
+    - field.field.node.institution.field_location
+    - field.field.node.institution.field_veranstaltungen
+    - node.type.institution
+  module:
+    - address
+    - link
+    - path
+id: node.institution.default
+targetEntityType: node
+bundle: institution
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_adresse:
+    weight: 35
+    type: address_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ansprechpartner:
+    weight: 37
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 34
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_veranstaltungen:
+    weight: 38
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  field_location: true

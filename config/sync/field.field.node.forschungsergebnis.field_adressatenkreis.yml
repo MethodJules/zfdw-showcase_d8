@@ -1,0 +1,26 @@
+uuid: c8e351c7-f290-4c3a-9797-aefc3865aea6
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adressatenkreis
+    - node.type.forschungsergebnis
+    - taxonomy.vocabulary.tax_morph_m_adressatenkreis
+id: node.forschungsergebnis.field_adressatenkreis
+field_name: field_adressatenkreis
+entity_type: node
+bundle: forschungsergebnis
+label: Adressatenkreis
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tax_morph_m_adressatenkreis: tax_morph_m_adressatenkreis
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

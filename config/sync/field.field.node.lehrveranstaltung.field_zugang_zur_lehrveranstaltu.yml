@@ -1,0 +1,26 @@
+uuid: 1c0b9aaf-e2e2-46ae-9012-2f5685d3f043
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zugang_zur_lehrveranstaltu
+    - node.type.lehrveranstaltung
+    - taxonomy.vocabulary.zugang
+id: node.lehrveranstaltung.field_zugang_zur_lehrveranstaltu
+field_name: field_zugang_zur_lehrveranstaltu
+entity_type: node
+bundle: lehrveranstaltung
+label: 'Zugang zur Lehrveranstaltung'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      zugang: zugang
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

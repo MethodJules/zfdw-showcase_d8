@@ -1,0 +1,18 @@
+uuid: 477ca4cb-ebc0-47af-b389-c51a575c5655
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.wissenskarte
+id: node.wissenskarte.title
+field_name: title
+entity_type: node
+bundle: wissenskarte
+label: Wissenskarte
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

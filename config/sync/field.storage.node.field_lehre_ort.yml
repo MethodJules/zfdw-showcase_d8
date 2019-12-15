@@ -1,0 +1,19 @@
+uuid: 5ee99f76-be3f-4242-a2ed-016befb3338b
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_lehre_ort
+field_name: field_lehre_ort
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

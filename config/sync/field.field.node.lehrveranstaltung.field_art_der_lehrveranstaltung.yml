@@ -1,0 +1,26 @@
+uuid: 481132c4-9353-434f-bade-44871148dc4e
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_art_der_lehrveranstaltung
+    - node.type.lehrveranstaltung
+    - taxonomy.vocabulary.lehrveranstaltungsart
+id: node.lehrveranstaltung.field_art_der_lehrveranstaltung
+field_name: field_art_der_lehrveranstaltung
+entity_type: node
+bundle: lehrveranstaltung
+label: 'Art der Lehrveranstaltung'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      lehrveranstaltungsart: lehrveranstaltungsart
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

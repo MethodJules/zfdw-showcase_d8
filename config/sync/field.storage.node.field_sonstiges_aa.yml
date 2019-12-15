@@ -1,0 +1,19 @@
+uuid: da8e93aa-3428-4d78-ae1f-473763de6f37
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_sonstiges_aa
+field_name: field_sonstiges_aa
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

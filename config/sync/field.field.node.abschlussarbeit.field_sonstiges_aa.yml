@@ -1,0 +1,23 @@
+uuid: 3c39874d-d2c2-45a7-9b67-411b00a0e82c
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sonstiges_aa
+    - node.type.abschlussarbeit
+  module:
+    - text
+id: node.abschlussarbeit.field_sonstiges_aa
+field_name: field_sonstiges_aa
+entity_type: node
+bundle: abschlussarbeit
+label: Sonstiges
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,18 @@
+uuid: 57f80734-81e8-41ca-9ca9-49fcd7f22246
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.abschlussarbeit
+id: node.abschlussarbeit.title
+field_name: title
+entity_type: node
+bundle: abschlussarbeit
+label: 'Titel der Abschlussarbeit'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

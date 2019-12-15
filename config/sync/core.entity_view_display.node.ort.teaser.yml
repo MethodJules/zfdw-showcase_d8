@@ -1,0 +1,36 @@
+uuid: eb39064c-9df1-42d6-91fb-3c314b627389
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ort.body
+    - field.field.node.ort.field_ort_adresse
+    - field.field.node.ort.field_ort_location
+    - node.type.ort
+  module:
+    - text
+    - user
+id: node.ort.teaser
+targetEntityType: node
+bundle: ort
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_ort_adresse: true
+  field_ort_location: true
+  langcode: true
+  search_api_excerpt: true

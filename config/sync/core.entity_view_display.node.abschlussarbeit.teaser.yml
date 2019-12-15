@@ -1,0 +1,48 @@
+uuid: 74b844f5-bd78-4ab7-8c83-c1aa4840470a
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.abschlussarbeit.body
+    - field.field.node.abschlussarbeit.field_link_aa
+    - field.field.node.abschlussarbeit.field_methoden
+    - field.field.node.abschlussarbeit.field_sonstiges_aa
+    - field.field.node.abschlussarbeit.field_sperrvermerk
+    - field.field.node.abschlussarbeit.field_status
+    - field.field.node.abschlussarbeit.field_themensteller
+    - field.field.node.abschlussarbeit.field_unternehmen
+    - field.field.node.abschlussarbeit.field_verknuepfte_projekte_aa
+    - node.type.abschlussarbeit
+  module:
+    - text
+    - user
+id: node.abschlussarbeit.teaser
+targetEntityType: node
+bundle: abschlussarbeit
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_link_aa: true
+  field_methoden: true
+  field_sonstiges_aa: true
+  field_sperrvermerk: true
+  field_status: true
+  field_themensteller: true
+  field_unternehmen: true
+  field_verknuepfte_projekte_aa: true
+  langcode: true
+  search_api_excerpt: true

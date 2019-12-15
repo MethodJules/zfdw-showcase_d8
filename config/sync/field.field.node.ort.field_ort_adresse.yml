@@ -1,0 +1,25 @@
+uuid: 71870078-492b-4ec9-8679-90e448940a46
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ort_adresse
+    - node.type.ort
+  module:
+    - address
+id: node.ort.field_ort_adresse
+field_name: field_ort_adresse
+entity_type: node
+bundle: ort
+label: Adresse
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address

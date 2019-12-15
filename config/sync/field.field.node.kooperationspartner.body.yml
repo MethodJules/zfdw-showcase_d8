@@ -1,0 +1,23 @@
+uuid: 90a27632-6889-4f67-af61-6aa595f2471e
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.kooperationspartner
+  module:
+    - text
+id: node.kooperationspartner.body
+field_name: body
+entity_type: node
+bundle: kooperationspartner
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

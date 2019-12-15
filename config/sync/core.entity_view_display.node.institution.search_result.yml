@@ -1,0 +1,39 @@
+uuid: d200b784-901f-45df-b65d-5dbba8e98738
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.institution.field_adresse
+    - field.field.node.institution.field_ansprechpartner
+    - field.field.node.institution.field_link
+    - field.field.node.institution.field_location
+    - field.field.node.institution.field_veranstaltungen
+    - node.type.institution
+  module:
+    - address
+    - user
+id: node.institution.search_result
+targetEntityType: node
+bundle: institution
+mode: search_result
+content:
+  field_adresse:
+    label: hidden
+    weight: 3
+    type: address_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_ansprechpartner: true
+  field_link: true
+  field_location: true
+  field_veranstaltungen: true
+  langcode: true
+  search_api_excerpt: true

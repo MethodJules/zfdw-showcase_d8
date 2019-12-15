@@ -1,0 +1,8 @@
+uuid: 46887071-ac10-445f-b469-d63875eda9e4
+langcode: de
+status: true
+dependencies: {  }
+id: comment_node_fachbereich
+label: 'Fachbereich comment'
+target_entity_type_id: node
+description: null

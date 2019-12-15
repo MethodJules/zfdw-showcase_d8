@@ -1,0 +1,18 @@
+uuid: 47fb2f23-82c0-40ab-ad9a-5d6d457a798c
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.event
+id: node.event.title
+field_name: title
+entity_type: node
+bundle: event
+label: Veranstaltungstitel
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,10 @@
+uuid: 29ebc42b-44fd-4c86-a428-1a3a8513a1c4
+langcode: de
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: aXZ2sOR-jVF6_oScPSJTjXCo333arzczomYQMnsJ8wU
+id: vote
+label: 'Normal Stimme'
+value_type: points
+description: 'Die Standardkennzeichnung für Bewertungen von Inhalt. Wenn für einen Inhalt mehrere Bewertungen mit verschiedenen Kennzeichnungen abgegeben werden, kann mit dieser Kennzeichnung auch eine „Gesamt“-Bewertung abgegeben werden.'

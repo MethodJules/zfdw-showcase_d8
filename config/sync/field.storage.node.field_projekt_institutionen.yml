@@ -1,0 +1,19 @@
+uuid: 7b36f213-334e-4cb0-b3c7-914ff6204730
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_projekt_institutionen
+field_name: field_projekt_institutionen
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

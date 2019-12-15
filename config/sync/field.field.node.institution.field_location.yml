@@ -1,0 +1,22 @@
+uuid: a3231848-2158-490d-95ef-d23995f66e0b
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.institution
+  module:
+    - geofield
+id: node.institution.field_location
+field_name: field_location
+entity_type: node
+bundle: institution
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

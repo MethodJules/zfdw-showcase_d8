@@ -1,0 +1,23 @@
+uuid: 53240117-8165-4380-8260-e4f6082ad1ea
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.biblio
+  module:
+    - text
+id: node.biblio.body
+field_name: body
+entity_type: node
+bundle: biblio
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

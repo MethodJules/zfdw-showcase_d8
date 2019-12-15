@@ -1,0 +1,93 @@
+uuid: c43cbd16-d963-4fbe-a7e8-99d92d34b472
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.person.body
+    - field.field.node.person.field_person_bild
+    - field.field.node.person.field_person_des_zfdw
+    - field.field.node.person.field_person_kontakt
+    - field.field.node.person.field_zugehoerige_institution
+    - field.field.node.person.field_zugehoerige_lehrvera
+    - field.field.node.person.field_zugehoerige_projekte
+    - field.field.node.person.field_zugehoerige_publikationen
+    - node.type.person
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.person.default
+targetEntityType: node
+bundle: person
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_person_bild:
+    label: hidden
+    weight: 5
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_person_kontakt:
+    label: above
+    weight: 4
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_zugehoerige_institution:
+    label: above
+    weight: 1
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_zugehoerige_lehrvera:
+    label: above
+    weight: 3
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_zugehoerige_projekte:
+    label: above
+    weight: 2
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_zugehoerige_publikationen:
+    label: above
+    weight: 6
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_person_des_zfdw: true
+  langcode: true
+  search_api_excerpt: true

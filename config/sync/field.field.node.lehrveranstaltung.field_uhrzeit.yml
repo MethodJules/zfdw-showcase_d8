@@ -1,0 +1,19 @@
+uuid: db1af99e-e312-4b16-93e2-0fc4ce6407db
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uhrzeit
+    - node.type.lehrveranstaltung
+id: node.lehrveranstaltung.field_uhrzeit
+field_name: field_uhrzeit
+entity_type: node
+bundle: lehrveranstaltung
+label: Uhrzeit
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

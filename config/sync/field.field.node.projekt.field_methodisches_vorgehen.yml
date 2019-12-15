@@ -1,0 +1,19 @@
+uuid: 3a060f3f-8e78-467e-a4ba-cef3ebffa740
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_methodisches_vorgehen
+    - node.type.projekt
+id: node.projekt.field_methodisches_vorgehen
+field_name: field_methodisches_vorgehen
+entity_type: node
+bundle: projekt
+label: 'Methodisches Vorgehen'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

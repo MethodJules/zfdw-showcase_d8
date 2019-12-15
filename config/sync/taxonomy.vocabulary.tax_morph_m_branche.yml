@@ -1,0 +1,8 @@
+uuid: c65f6523-ff9f-4877-b612-c4fb839d0b24
+langcode: de
+status: true
+dependencies: {  }
+name: Sachbereich/Branche
+vid: tax_morph_m_branche
+description: ''
+weight: 0

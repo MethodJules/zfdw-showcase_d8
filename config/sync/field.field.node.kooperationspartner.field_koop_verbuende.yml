@@ -1,0 +1,21 @@
+uuid: 9135eaf5-0df6-45eb-b14e-e8dff0194ec8
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_koop_verbuende
+    - node.type.kooperationspartner
+  module:
+    - text
+id: node.kooperationspartner.field_koop_verbuende
+field_name: field_koop_verbuende
+entity_type: node
+bundle: kooperationspartner
+label: Verbünde
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

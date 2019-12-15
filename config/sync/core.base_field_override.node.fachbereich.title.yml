@@ -1,0 +1,18 @@
+uuid: 8eab5109-936f-4d3f-8b43-c08668ac7b4c
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.fachbereich
+id: node.fachbereich.title
+field_name: title
+entity_type: node
+bundle: fachbereich
+label: 'Name des Fachbereichs'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+uuid: c47f659f-fe02-4f73-8f4a-3dfeb576432d
+langcode: de
+status: true
+dependencies:
+  config:
+    - user.role.portalprojekt
+  module:
+    - user
+id: user_add_role_action.portalprojekt
+label: 'Den ausgewählten Benutzern die Rolle Portalprojekt zuweisen'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: portalprojekt

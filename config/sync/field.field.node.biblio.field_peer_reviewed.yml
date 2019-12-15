@@ -1,0 +1,23 @@
+uuid: acee683b-fb4f-4a0c-b7bd-a8c03fcaaeb0
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_peer_reviewed
+    - node.type.biblio
+id: node.biblio.field_peer_reviewed
+field_name: field_peer_reviewed
+entity_type: node
+bundle: biblio
+label: 'Peer reviewed'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ja
+  off_label: nein
+field_type: boolean

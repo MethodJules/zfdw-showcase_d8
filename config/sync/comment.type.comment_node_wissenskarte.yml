@@ -1,0 +1,8 @@
+uuid: 2b3e3fd5-ce27-4bed-b2da-d55ac0d27e8f
+langcode: de
+status: true
+dependencies: {  }
+id: comment_node_wissenskarte
+label: 'Wissenskarte comment'
+target_entity_type_id: node
+description: null

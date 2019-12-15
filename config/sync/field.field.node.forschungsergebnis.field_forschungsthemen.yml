@@ -1,0 +1,26 @@
+uuid: d51b3c5c-7ddb-49a4-bbcb-91233be6751e
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forschungsthemen
+    - node.type.forschungsergebnis
+    - taxonomy.vocabulary.tax_morph_m_forschungsthemen
+id: node.forschungsergebnis.field_forschungsthemen
+field_name: field_forschungsthemen
+entity_type: node
+bundle: forschungsergebnis
+label: Forschungsthemen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tax_morph_m_forschungsthemen: tax_morph_m_forschungsthemen
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

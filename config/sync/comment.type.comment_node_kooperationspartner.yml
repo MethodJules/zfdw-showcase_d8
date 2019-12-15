@@ -1,0 +1,8 @@
+uuid: 90b193cb-c4a5-47d0-a1c5-c9f3191e2af7
+langcode: de
+status: true
+dependencies: {  }
+id: comment_node_kooperationspartner
+label: 'Kooperationspartner comment'
+target_entity_type_id: node
+description: null

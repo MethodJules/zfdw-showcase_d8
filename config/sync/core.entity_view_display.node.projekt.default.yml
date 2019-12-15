@@ -1,0 +1,186 @@
+uuid: da75c566-4880-4ba9-9eb7-e4f63eb82c5a
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.projekt.body
+    - field.field.node.projekt.field_aufgabenverteilung
+    - field.field.node.projekt.field_branche
+    - field.field.node.projekt.field_datenbasis
+    - field.field.node.projekt.field_foerderung
+    - field.field.node.projekt.field_forschungsergebnisse
+    - field.field.node.projekt.field_forschungsfragen
+    - field.field.node.projekt.field_keywords
+    - field.field.node.projekt.field_laufzeit
+    - field.field.node.projekt.field_methoden_und_werkzeuge
+    - field.field.node.projekt.field_methodisches_vorgehen
+    - field.field.node.projekt.field_projekt_institutionen
+    - field.field.node.projekt.field_projekt_link
+    - field.field.node.projekt.field_projektklasse
+    - field.field.node.projekt.field_projektkuerzel
+    - field.field.node.projekt.field_projektleiter
+    - field.field.node.projekt.field_sonstiges
+    - field.field.node.projekt.field_zugehoerige_personen
+    - node.type.projekt
+  module:
+    - datetime
+    - link
+    - text
+    - user
+id: node.projekt.default
+targetEntityType: node
+bundle: projekt
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_aufgabenverteilung:
+    label: above
+    weight: 10
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_branche:
+    label: above
+    weight: 16
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_datenbasis:
+    label: above
+    weight: 7
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_foerderung:
+    label: above
+    weight: 11
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_forschungsergebnisse:
+    label: above
+    weight: 15
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_forschungsfragen:
+    label: above
+    weight: 4
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_keywords:
+    label: above
+    weight: 5
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_laufzeit:
+    label: above
+    weight: 1
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_methoden_und_werkzeuge:
+    label: above
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_methodisches_vorgehen:
+    label: above
+    weight: 6
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_projekt_institutionen:
+    label: above
+    weight: 14
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_projekt_link:
+    label: above
+    weight: 12
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_projektklasse:
+    label: above
+    weight: 8
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_projektkuerzel:
+    label: above
+    weight: 17
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_projektleiter:
+    label: above
+    weight: 19
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_sonstiges:
+    label: above
+    weight: 13
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_zugehoerige_personen:
+    label: above
+    weight: 18
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

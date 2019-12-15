@@ -1,0 +1,30 @@
+uuid: 96900aa7-6bfc-40f8-aa81-66b77512ac3d
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zugehoerige_lehrvera
+    - node.type.lehrveranstaltung
+    - node.type.person
+id: node.person.field_zugehoerige_lehrvera
+field_name: field_zugehoerige_lehrvera
+entity_type: node
+bundle: person
+label: 'Zugehörige Lehrveranstaltungen'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      lehrveranstaltung: lehrveranstaltung
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: dbc82613-72e8-4a2e-aea4-dee0992e39a9
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_raum
+    - node.type.lehrveranstaltung
+id: node.lehrveranstaltung.field_raum
+field_name: field_raum
+entity_type: node
+bundle: lehrveranstaltung
+label: Raum
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

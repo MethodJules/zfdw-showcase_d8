@@ -1,0 +1,8 @@
+uuid: 276cfedd-9a75-40c5-8a64-f57d6f9354fc
+langcode: de
+status: true
+dependencies: {  }
+id: comment_node_event
+label: 'Veranstaltung comment'
+target_entity_type_id: node
+description: null

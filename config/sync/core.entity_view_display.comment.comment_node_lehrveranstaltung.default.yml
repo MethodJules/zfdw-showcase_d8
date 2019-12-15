@@ -1,0 +1,29 @@
+uuid: 7c9742e7-8048-4d0b-9246-c6573f0b2bd5
+langcode: de
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_lehrveranstaltung
+    - field.field.comment.comment_node_lehrveranstaltung.comment_body
+  module:
+    - text
+id: comment.comment_node_lehrveranstaltung.default
+targetEntityType: comment
+bundle: comment_node_lehrveranstaltung
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

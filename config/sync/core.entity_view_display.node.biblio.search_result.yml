@@ -1,0 +1,26 @@
+uuid: d73580f4-9947-46b7-a840-ea430d417c8b
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.biblio.body
+    - field.field.node.biblio.field_peer_reviewed
+    - node.type.biblio
+  module:
+    - user
+id: node.biblio.search_result
+targetEntityType: node
+bundle: biblio
+mode: search_result
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  field_peer_reviewed: true
+  langcode: true
+  search_api_excerpt: true

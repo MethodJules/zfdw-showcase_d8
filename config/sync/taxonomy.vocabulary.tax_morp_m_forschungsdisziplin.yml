@@ -1,0 +1,8 @@
+uuid: 6fde9e45-fcf0-4a06-80a8-c6b360b4be9f
+langcode: de
+status: true
+dependencies: {  }
+name: Forschungsdisziplin
+vid: tax_morp_m_forschungsdisziplin
+description: ''
+weight: 0

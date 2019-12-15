@@ -1,0 +1,14 @@
+uuid: aaa78499-2111-4c1d-9511-deec8baae279
+langcode: de
+status: true
+dependencies:
+  config:
+    - user.role.portalprojekt
+  module:
+    - user
+id: user_remove_role_action.portalprojekt
+label: 'Den ausgewählten Benutzern die Rolle Portalprojekt entziehen'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: portalprojekt

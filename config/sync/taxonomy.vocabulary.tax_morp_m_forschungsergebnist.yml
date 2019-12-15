@@ -1,0 +1,8 @@
+uuid: 4eba57c3-c69a-473e-a5c4-6f302e674b8a
+langcode: de
+status: true
+dependencies: {  }
+name: Forschungsergebnistyp
+vid: tax_morp_m_forschungsergebnist
+description: ''
+weight: 0

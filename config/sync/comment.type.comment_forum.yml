@@ -1,0 +1,8 @@
+uuid: 5035ca25-e5d6-416b-b891-b3ef46cc5f8f
+langcode: de
+status: true
+dependencies: {  }
+id: comment_forum
+label: 'Forenthema comment'
+target_entity_type_id: node
+description: null

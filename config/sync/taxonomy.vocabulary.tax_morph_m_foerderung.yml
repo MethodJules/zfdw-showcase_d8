@@ -1,0 +1,8 @@
+uuid: b26f348b-55c9-4a62-9586-59f266d689c5
+langcode: de
+status: true
+dependencies: {  }
+name: Förderung
+vid: tax_morph_m_foerderung
+description: ''
+weight: 0

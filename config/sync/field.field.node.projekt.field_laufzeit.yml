@@ -1,0 +1,21 @@
+uuid: 67352e16-71e7-491c-adc4-71fa87ee062d
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_laufzeit
+    - node.type.projekt
+  module:
+    - datetime
+id: node.projekt.field_laufzeit
+field_name: field_laufzeit
+entity_type: node
+bundle: projekt
+label: Projektlaufzeit
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

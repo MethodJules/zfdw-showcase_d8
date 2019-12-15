@@ -1,0 +1,23 @@
+uuid: 8dff11a9-6504-4b27-96ca-e701c8345100
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_praxiseinsatz
+    - node.type.forschungsergebnis
+  module:
+    - text
+id: node.forschungsergebnis.field_praxiseinsatz
+field_name: field_praxiseinsatz
+entity_type: node
+bundle: forschungsergebnis
+label: Praxiseinsatz
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

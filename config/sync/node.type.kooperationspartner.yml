@@ -1,0 +1,18 @@
+uuid: cabddfd1-62df-4c10-befe-93e2a52af0b7
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: Kooperationspartner
+type: kooperationspartner
+description: 'Dieser Inhaltstyp beschreibt Kooperationspartner aus der Praxis.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

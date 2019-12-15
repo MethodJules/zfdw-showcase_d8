@@ -1,0 +1,19 @@
+uuid: 51dec712-5029-471e-ae1d-1a3b67b6060d
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_projektkuerzel
+    - node.type.projekt
+id: node.projekt.field_projektkuerzel
+field_name: field_projektkuerzel
+entity_type: node
+bundle: projekt
+label: Projektkürzel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

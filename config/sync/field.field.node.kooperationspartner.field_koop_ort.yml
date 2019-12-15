@@ -1,0 +1,30 @@
+uuid: 8aa3962b-e6c5-4916-9d79-53d45f14f1c9
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_koop_ort
+    - node.type.kooperationspartner
+    - node.type.ort
+id: node.kooperationspartner.field_koop_ort
+field_name: field_koop_ort
+entity_type: node
+bundle: kooperationspartner
+label: Ort
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      ort: ort
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

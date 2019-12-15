@@ -1,0 +1,21 @@
+uuid: e7fabed7-dec2-4007-a103-880c9dc077d7
+langcode: de
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_institution
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_institution.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_institution
+label: Comment
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

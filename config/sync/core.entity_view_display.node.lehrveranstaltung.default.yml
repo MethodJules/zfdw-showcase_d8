@@ -1,0 +1,116 @@
+uuid: edc5bfbc-823d-4d70-8ebd-c76cbd325727
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.lehrveranstaltung.body
+    - field.field.node.lehrveranstaltung.field_art_der_lehrveranstaltung
+    - field.field.node.lehrveranstaltung.field_durchfuehrende_person
+    - field.field.node.lehrveranstaltung.field_lehre_ort
+    - field.field.node.lehrveranstaltung.field_lehrmaterialien
+    - field.field.node.lehrveranstaltung.field_raum
+    - field.field.node.lehrveranstaltung.field_uhrzeit
+    - field.field.node.lehrveranstaltung.field_verantwortliche_person
+    - field.field.node.lehrveranstaltung.field_zeitraum
+    - field.field.node.lehrveranstaltung.field_zugang_zur_lehrveranstaltu
+    - node.type.lehrveranstaltung
+  module:
+    - link
+    - text
+    - user
+id: node.lehrveranstaltung.default
+targetEntityType: node
+bundle: lehrveranstaltung
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_art_der_lehrveranstaltung:
+    label: above
+    weight: 6
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_durchfuehrende_person:
+    label: above
+    weight: 5
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_lehre_ort:
+    label: above
+    weight: 11
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_lehrmaterialien:
+    label: above
+    weight: 1
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_raum:
+    label: above
+    weight: 9
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_uhrzeit:
+    label: above
+    weight: 8
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_verantwortliche_person:
+    label: above
+    weight: 4
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_zeitraum:
+    label: above
+    weight: 10
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_zugang_zur_lehrveranstaltu:
+    label: above
+    weight: 7
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,30 @@
+uuid: 7f1e371c-a46f-4328-ad97-6a687ba89976
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zugehoerige_personen
+    - node.type.person
+    - node.type.projekt
+id: node.projekt.field_zugehoerige_personen
+field_name: field_zugehoerige_personen
+entity_type: node
+bundle: projekt
+label: 'Zugehörige Personen'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

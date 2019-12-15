@@ -1,0 +1,46 @@
+uuid: 38d67c9a-5bb3-4b71-9774-371827c7e4a5
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.person.body
+    - field.field.node.person.field_person_bild
+    - field.field.node.person.field_person_des_zfdw
+    - field.field.node.person.field_person_kontakt
+    - field.field.node.person.field_zugehoerige_institution
+    - field.field.node.person.field_zugehoerige_lehrvera
+    - field.field.node.person.field_zugehoerige_projekte
+    - field.field.node.person.field_zugehoerige_publikationen
+    - node.type.person
+  module:
+    - text
+    - user
+id: node.person.teaser
+targetEntityType: node
+bundle: person
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_person_bild: true
+  field_person_des_zfdw: true
+  field_person_kontakt: true
+  field_zugehoerige_institution: true
+  field_zugehoerige_lehrvera: true
+  field_zugehoerige_projekte: true
+  field_zugehoerige_publikationen: true
+  langcode: true
+  search_api_excerpt: true

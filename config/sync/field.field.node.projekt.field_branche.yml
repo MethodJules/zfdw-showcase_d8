@@ -1,0 +1,26 @@
+uuid: efb2ae53-5a79-44ac-8c73-88f83f98e6fc
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_branche
+    - node.type.projekt
+    - taxonomy.vocabulary.tax_morph_m_branche
+id: node.projekt.field_branche
+field_name: field_branche
+entity_type: node
+bundle: projekt
+label: Sachbereich/Branche
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tax_morph_m_branche: tax_morph_m_branche
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

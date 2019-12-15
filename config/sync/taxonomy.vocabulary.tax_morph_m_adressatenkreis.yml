@@ -1,0 +1,8 @@
+uuid: 7eacaede-1332-49d1-ba3e-c20454b4254b
+langcode: de
+status: true
+dependencies: {  }
+name: Adressatenkreis
+vid: tax_morph_m_adressatenkreis
+description: ''
+weight: 0

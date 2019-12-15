@@ -1,0 +1,15 @@
+uuid: 9a560850-b452-4bf8-9d47-49f4701920df
+langcode: de
+status: true
+dependencies: {  }
+name: uhiportal_slider_image
+label: 'uhiportal slider image'
+effects:
+  f6a3071b-0bc2-4341-a9d4-a83fe343d981:
+    uuid: f6a3071b-0bc2-4341-a9d4-a83fe343d981
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: 300
+      upscale: false

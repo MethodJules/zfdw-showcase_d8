@@ -1,0 +1,105 @@
+uuid: 1618bf90-41be-498d-b9ae-8ed040646721
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.abschlussarbeit.body
+    - field.field.node.abschlussarbeit.field_link_aa
+    - field.field.node.abschlussarbeit.field_methoden
+    - field.field.node.abschlussarbeit.field_sonstiges_aa
+    - field.field.node.abschlussarbeit.field_sperrvermerk
+    - field.field.node.abschlussarbeit.field_status
+    - field.field.node.abschlussarbeit.field_themensteller
+    - field.field.node.abschlussarbeit.field_unternehmen
+    - field.field.node.abschlussarbeit.field_verknuepfte_projekte_aa
+    - node.type.abschlussarbeit
+  module:
+    - link
+    - options
+    - text
+    - user
+id: node.abschlussarbeit.default
+targetEntityType: node
+bundle: abschlussarbeit
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_link_aa:
+    label: above
+    weight: 6
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_methoden:
+    label: above
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_sonstiges_aa:
+    label: above
+    weight: 7
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_sperrvermerk:
+    label: above
+    weight: 1
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_status:
+    label: above
+    weight: 3
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_themensteller:
+    label: above
+    weight: 2
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_unternehmen:
+    label: above
+    weight: 5
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_verknuepfte_projekte_aa:
+    label: above
+    weight: 8
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

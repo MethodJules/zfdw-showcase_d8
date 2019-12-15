@@ -1,0 +1,56 @@
+uuid: 9e0fde93-783c-452f-ac5c-2843f7aeac95
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_wissenskarte.default
+    - field.field.node.wissenskarte.comment_node_wissenskarte
+    - field.field.node.wissenskarte.field_beschreibung
+    - field.field.node.wissenskarte.field_internal_reference
+    - field.field.node.wissenskarte.field_tag_combined
+    - field.field.node.wissenskarte.field_wk_bild
+    - node.type.wissenskarte
+  module:
+    - comment
+    - image
+    - user
+id: node.wissenskarte.default
+targetEntityType: node
+bundle: wissenskarte
+mode: default
+content:
+  comment_node_wissenskarte:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_beschreibung:
+    label: hidden
+    weight: 1
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_wk_bild:
+    label: hidden
+    weight: 0
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_internal_reference: true
+  field_tag_combined: true
+  langcode: true
+  search_api_excerpt: true

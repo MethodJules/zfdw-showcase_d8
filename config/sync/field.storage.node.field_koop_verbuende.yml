@@ -1,0 +1,19 @@
+uuid: 5ed3f1b6-845b-4766-82a6-feb5414791b0
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_koop_verbuende
+field_name: field_koop_verbuende
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

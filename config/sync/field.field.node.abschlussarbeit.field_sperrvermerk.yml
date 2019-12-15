@@ -1,0 +1,23 @@
+uuid: 96495e53-215b-491b-9ce9-ee0f157f9cc5
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sperrvermerk
+    - node.type.abschlussarbeit
+id: node.abschlussarbeit.field_sperrvermerk
+field_name: field_sperrvermerk
+entity_type: node
+bundle: abschlussarbeit
+label: Sperrvermerk
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ja
+  off_label: nein
+field_type: boolean

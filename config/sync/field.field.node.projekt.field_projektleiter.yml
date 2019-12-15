@@ -1,0 +1,30 @@
+uuid: 4520258c-761c-4e4c-841c-8d8da515f9e6
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_projektleiter
+    - node.type.person
+    - node.type.projekt
+id: node.projekt.field_projektleiter
+field_name: field_projektleiter
+entity_type: node
+bundle: projekt
+label: Projektleiter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

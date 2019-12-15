@@ -1,0 +1,29 @@
+uuid: f4d7bd40-1e65-421a-a14f-a8e7be21ea43
+langcode: de
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_abschlussarbeit
+    - field.field.comment.comment_node_abschlussarbeit.comment_body
+  module:
+    - text
+id: comment.comment_node_abschlussarbeit.default
+targetEntityType: comment
+bundle: comment_node_abschlussarbeit
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

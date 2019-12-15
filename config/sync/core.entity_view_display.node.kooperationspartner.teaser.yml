@@ -1,0 +1,44 @@
+uuid: c7645c3b-ace8-46b8-bafd-4bf3035a4186
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.kooperationspartner.body
+    - field.field.node.kooperationspartner.field_koop_ansprechpartner
+    - field.field.node.kooperationspartner.field_koop_ort
+    - field.field.node.kooperationspartner.field_koop_projekte
+    - field.field.node.kooperationspartner.field_koop_veranstaltungen
+    - field.field.node.kooperationspartner.field_koop_verbuende
+    - field.field.node.kooperationspartner.field_koop_webseite
+    - node.type.kooperationspartner
+  module:
+    - text
+    - user
+id: node.kooperationspartner.teaser
+targetEntityType: node
+bundle: kooperationspartner
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_koop_ansprechpartner: true
+  field_koop_ort: true
+  field_koop_projekte: true
+  field_koop_veranstaltungen: true
+  field_koop_verbuende: true
+  field_koop_webseite: true
+  langcode: true
+  search_api_excerpt: true

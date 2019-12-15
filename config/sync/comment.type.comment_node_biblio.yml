@@ -1,0 +1,8 @@
+uuid: 58d7f38d-313c-4ac9-8449-6a078a6d011d
+langcode: de
+status: true
+dependencies: {  }
+id: comment_node_biblio
+label: 'Publikation comment'
+target_entity_type_id: node
+description: null

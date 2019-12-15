@@ -1,0 +1,30 @@
+uuid: 6644b254-421c-4393-bd13-015f3c23471e
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lehre_ort
+    - node.type.lehrveranstaltung
+    - node.type.ort
+id: node.lehrveranstaltung.field_lehre_ort
+field_name: field_lehre_ort
+entity_type: node
+bundle: lehrveranstaltung
+label: Ort
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      ort: ort
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

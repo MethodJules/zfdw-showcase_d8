@@ -1,0 +1,20 @@
+uuid: 88b723d1-c8cc-43a4-b77b-ad56b39296c0
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_branche
+field_name: field_branche
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: ad5ac371-cf93-46f5-95a3-c228933628b8
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.basic_page_2_col_
+id: node.basic_page_2_col_.promote
+field_name: promote
+entity_type: node
+bundle: basic_page_2_col_
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

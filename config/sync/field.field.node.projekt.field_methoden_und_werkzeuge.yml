@@ -1,0 +1,21 @@
+uuid: 0c916c0b-d859-4859-85c3-d0077f10926d
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_methoden_und_werkzeuge
+    - node.type.projekt
+  module:
+    - text
+id: node.projekt.field_methoden_und_werkzeuge
+field_name: field_methoden_und_werkzeuge
+entity_type: node
+bundle: projekt
+label: 'Methoden und Werkzeuge'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,18 @@
+uuid: 114a01f1-5861-4e92-ab37-6a90d200bc97
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.biblio
+id: node.biblio.title
+field_name: title
+entity_type: node
+bundle: biblio
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: 8e37e06c-086e-489d-b65f-cf968f70a936
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_methoden
+    - node.type.abschlussarbeit
+  module:
+    - text
+id: node.abschlussarbeit.field_methoden
+field_name: field_methoden
+entity_type: node
+bundle: abschlussarbeit
+label: Methoden
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,26 @@
+uuid: 378b539b-271d-4a51-a0f7-21c6507589df
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_foerderung
+    - node.type.projekt
+    - taxonomy.vocabulary.tax_morph_m_foerderung
+id: node.projekt.field_foerderung
+field_name: field_foerderung
+entity_type: node
+bundle: projekt
+label: Förderung
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tax_morph_m_foerderung: tax_morph_m_foerderung
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

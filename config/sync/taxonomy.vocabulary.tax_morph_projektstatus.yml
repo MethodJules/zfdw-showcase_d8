@@ -1,0 +1,8 @@
+uuid: f68dfb8c-784b-4ffc-94a4-b439c6c368ed
+langcode: de
+status: true
+dependencies: {  }
+name: Projektstatus
+vid: tax_morph_projektstatus
+description: ''
+weight: 0

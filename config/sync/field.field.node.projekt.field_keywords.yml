@@ -1,0 +1,26 @@
+uuid: a0e325b1-f4fc-4ad8-b90b-ae140a1dd1d4
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_keywords
+    - node.type.projekt
+    - taxonomy.vocabulary.tags
+id: node.projekt.field_keywords
+field_name: field_keywords
+entity_type: node
+bundle: projekt
+label: Keywords
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tags: tags
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

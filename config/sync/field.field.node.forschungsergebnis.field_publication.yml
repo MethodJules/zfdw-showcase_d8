@@ -1,0 +1,30 @@
+uuid: b4f94932-0db5-443a-924e-5a8afb2944e9
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication
+    - node.type.biblio
+    - node.type.forschungsergebnis
+id: node.forschungsergebnis.field_publication
+field_name: field_publication
+entity_type: node
+bundle: forschungsergebnis
+label: Publikation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      biblio: biblio
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

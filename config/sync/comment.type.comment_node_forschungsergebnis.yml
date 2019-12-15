@@ -1,0 +1,8 @@
+uuid: 7cd29525-c2fc-4946-bfc6-860a3427f463
+langcode: de
+status: true
+dependencies: {  }
+id: comment_node_forschungsergebnis
+label: 'Forschungsergebnis comment'
+target_entity_type_id: node
+description: null

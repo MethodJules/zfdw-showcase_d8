@@ -1,0 +1,18 @@
+uuid: 969b2957-7988-42b3-89b9-c848bc587023
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.ort
+id: node.ort.title
+field_name: title
+entity_type: node
+bundle: ort
+label: 'Name des Orts'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

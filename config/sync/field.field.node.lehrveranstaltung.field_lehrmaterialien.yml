@@ -1,0 +1,23 @@
+uuid: 8150b887-5699-4f6b-9c19-4fa3fe55f697
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lehrmaterialien
+    - node.type.lehrveranstaltung
+  module:
+    - link
+id: node.lehrveranstaltung.field_lehrmaterialien
+field_name: field_lehrmaterialien
+entity_type: node
+bundle: lehrveranstaltung
+label: 'Weitere Informationen'
+description: 'Hier können Sie auf Ihre Lehrmaterialien verlinken.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

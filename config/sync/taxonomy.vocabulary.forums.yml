@@ -1,0 +1,8 @@
+uuid: d0873690-d678-4db5-ae85-5acae70c505f
+langcode: de
+status: true
+dependencies: {  }
+name: Foren
+vid: forums
+description: 'Forum Navigations-Vokabular'
+weight: -10

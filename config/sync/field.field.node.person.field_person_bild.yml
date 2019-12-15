@@ -1,0 +1,38 @@
+uuid: 536f2d2b-5cb8-4468-b969-8693a89fe608
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_person_bild
+    - node.type.person
+  module:
+    - image
+id: node.person.field_person_bild
+field_name: field_person_bild
+entity_type: node
+bundle: person
+label: Bild
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  file_directory: ''
+  max_filesize: ''
+  alt_field: false
+  title_field: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

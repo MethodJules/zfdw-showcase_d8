@@ -1,0 +1,30 @@
+uuid: 8a2cd5f4-82a5-453c-a004-f0adaf44ddaa
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_institutionen
+    - node.type.fachbereich
+    - node.type.institution
+id: node.fachbereich.field_institutionen
+field_name: field_institutionen
+entity_type: node
+bundle: fachbereich
+label: Institutionen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      institution: institution
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

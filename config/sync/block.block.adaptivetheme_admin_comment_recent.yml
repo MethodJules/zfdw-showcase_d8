@@ -1,0 +1,24 @@
+uuid: e03c6b78-d3c2-4746-bdaf-6112ec4d4f53
+langcode: de
+status: false
+dependencies:
+  config:
+    - views.view.comments_recent
+  module:
+    - views
+  theme:
+    - adaptivetheme_admin
+id: adaptivetheme_admin_comment_recent
+theme: adaptivetheme_admin
+region: ''
+weight: 0
+provider: null
+plugin: 'views_block:comments_recent-block_1'
+settings:
+  id: 'views_block:comments_recent-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

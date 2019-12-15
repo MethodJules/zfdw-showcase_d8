@@ -1,0 +1,30 @@
+uuid: 1835a30f-fd5e-4ca0-b7c5-1888682a3d19
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_koop_veranstaltungen
+    - node.type.event
+    - node.type.kooperationspartner
+id: node.kooperationspartner.field_koop_veranstaltungen
+field_name: field_koop_veranstaltungen
+entity_type: node
+bundle: kooperationspartner
+label: Veranstaltungen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      event: event
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 6c3a10d5-96dd-427f-b773-3c41d94c5ff4
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_aufgabenverteilung
+field_name: field_aufgabenverteilung
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

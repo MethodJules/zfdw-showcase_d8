@@ -1,0 +1,66 @@
+uuid: f973575e-78be-444d-a538-6b24215c32f7
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.projekt.body
+    - field.field.node.projekt.field_aufgabenverteilung
+    - field.field.node.projekt.field_branche
+    - field.field.node.projekt.field_datenbasis
+    - field.field.node.projekt.field_foerderung
+    - field.field.node.projekt.field_forschungsergebnisse
+    - field.field.node.projekt.field_forschungsfragen
+    - field.field.node.projekt.field_keywords
+    - field.field.node.projekt.field_laufzeit
+    - field.field.node.projekt.field_methoden_und_werkzeuge
+    - field.field.node.projekt.field_methodisches_vorgehen
+    - field.field.node.projekt.field_projekt_institutionen
+    - field.field.node.projekt.field_projekt_link
+    - field.field.node.projekt.field_projektklasse
+    - field.field.node.projekt.field_projektkuerzel
+    - field.field.node.projekt.field_projektleiter
+    - field.field.node.projekt.field_sonstiges
+    - field.field.node.projekt.field_zugehoerige_personen
+    - node.type.projekt
+  module:
+    - text
+    - user
+id: node.projekt.teaser
+targetEntityType: node
+bundle: projekt
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_aufgabenverteilung: true
+  field_branche: true
+  field_datenbasis: true
+  field_foerderung: true
+  field_forschungsergebnisse: true
+  field_forschungsfragen: true
+  field_keywords: true
+  field_laufzeit: true
+  field_methoden_und_werkzeuge: true
+  field_methodisches_vorgehen: true
+  field_projekt_institutionen: true
+  field_projekt_link: true
+  field_projektklasse: true
+  field_projektkuerzel: true
+  field_projektleiter: true
+  field_sonstiges: true
+  field_zugehoerige_personen: true
+  langcode: true
+  search_api_excerpt: true

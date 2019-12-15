@@ -1,0 +1,21 @@
+uuid: 418c6332-a71e-4041-ae14-687d1d7d9f6c
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_raum
+field_name: field_raum
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,30 @@
+uuid: 20b2bab9-af8a-418f-b94d-f1388a20b8e8
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zugehoerige_projekte
+    - node.type.person
+    - node.type.projekt
+id: node.person.field_zugehoerige_projekte
+field_name: field_zugehoerige_projekte
+entity_type: node
+bundle: person
+label: 'Zugehörige Projekte'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      projekt: projekt
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

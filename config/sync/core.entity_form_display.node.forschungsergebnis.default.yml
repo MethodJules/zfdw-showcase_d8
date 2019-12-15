@@ -1,0 +1,185 @@
+uuid: a0ee1909-bb7d-4597-98c9-2eb67c282dbd
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.forschungsergebnis.body
+    - field.field.node.forschungsergebnis.field_adressatenkreis
+    - field.field.node.forschungsergebnis.field_einschlaegige_disziplinen
+    - field.field.node.forschungsergebnis.field_forschungsstatus
+    - field.field.node.forschungsergebnis.field_forschungsthemen
+    - field.field.node.forschungsergebnis.field_keywords_fe
+    - field.field.node.forschungsergebnis.field_link_fe
+    - field.field.node.forschungsergebnis.field_praxiseinsatz
+    - field.field.node.forschungsergebnis.field_publication
+    - field.field.node.forschungsergebnis.field_sonstiges_fe
+    - field.field.node.forschungsergebnis.field_typ
+    - node.type.forschungsergebnis
+  module:
+    - link
+    - path
+    - text
+id: node.forschungsergebnis.default
+targetEntityType: node
+bundle: forschungsergebnis
+mode: default
+content:
+  body:
+    weight: 31
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_adressatenkreis:
+    weight: 36
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_einschlaegige_disziplinen:
+    weight: 33
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_forschungsstatus:
+    weight: 34
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_forschungsthemen:
+    weight: 37
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_keywords_fe:
+    weight: 40
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_link_fe:
+    weight: 38
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_praxiseinsatz:
+    weight: 35
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_publication:
+    weight: 41
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_sonstiges_fe:
+    weight: 39
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_typ:
+    weight: 32
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

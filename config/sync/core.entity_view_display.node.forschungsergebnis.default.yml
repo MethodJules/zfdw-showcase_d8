@@ -1,0 +1,123 @@
+uuid: 7f34aa4e-1d4b-4b08-ba44-37cb38b48604
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.forschungsergebnis.body
+    - field.field.node.forschungsergebnis.field_adressatenkreis
+    - field.field.node.forschungsergebnis.field_einschlaegige_disziplinen
+    - field.field.node.forschungsergebnis.field_forschungsstatus
+    - field.field.node.forschungsergebnis.field_forschungsthemen
+    - field.field.node.forschungsergebnis.field_keywords_fe
+    - field.field.node.forschungsergebnis.field_link_fe
+    - field.field.node.forschungsergebnis.field_praxiseinsatz
+    - field.field.node.forschungsergebnis.field_publication
+    - field.field.node.forschungsergebnis.field_sonstiges_fe
+    - field.field.node.forschungsergebnis.field_typ
+    - node.type.forschungsergebnis
+  module:
+    - link
+    - text
+    - user
+id: node.forschungsergebnis.default
+targetEntityType: node
+bundle: forschungsergebnis
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_adressatenkreis:
+    label: above
+    weight: 5
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_einschlaegige_disziplinen:
+    label: above
+    weight: 2
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_forschungsstatus:
+    label: above
+    weight: 3
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_forschungsthemen:
+    label: above
+    weight: 6
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_keywords_fe:
+    label: above
+    weight: 9
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_link_fe:
+    label: above
+    weight: 7
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_praxiseinsatz:
+    label: above
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_publication:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_sonstiges_fe:
+    label: above
+    weight: 8
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_typ:
+    label: above
+    weight: 1
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

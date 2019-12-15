@@ -1,0 +1,39 @@
+uuid: 475c843d-f74c-4f49-8bd3-77d48774a98b
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.biblio.body
+    - field.field.node.biblio.field_peer_reviewed
+    - node.type.biblio
+  module:
+    - options
+    - text
+    - user
+id: node.biblio.default
+targetEntityType: node
+bundle: biblio
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_peer_reviewed:
+    label: inline
+    weight: 1
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

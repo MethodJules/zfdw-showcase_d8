@@ -1,0 +1,19 @@
+uuid: 0485b4e0-a911-40fc-80b8-4735e3684bf9
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forschungsfragen
+    - node.type.projekt
+id: node.projekt.field_forschungsfragen
+field_name: field_forschungsfragen
+entity_type: node
+bundle: projekt
+label: Forschungsfragen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

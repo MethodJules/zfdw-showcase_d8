@@ -1,0 +1,52 @@
+uuid: 8e586f8b-33f3-4407-92e2-c97a66db8081
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.basic_page_2_col_.body
+    - field.field.node.basic_page_2_col_.field_image
+    - node.type.basic_page_2_col_
+  module:
+    - ds
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_twocol
+      library: layout_discovery/twocol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      first:
+        - field_image
+      second:
+        - body
+id: node.basic_page_2_col_.default
+targetEntityType: node
+bundle: basic_page_2_col_
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: second
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: first
+hidden:
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,8 @@
+uuid: 1ecf20eb-b617-4b71-a263-0de60d20aba2
+langcode: de
+status: true
+dependencies: {  }
+id: comment_node_abschlussarbeit
+label: 'Abschlussarbeit comment'
+target_entity_type_id: node
+description: null

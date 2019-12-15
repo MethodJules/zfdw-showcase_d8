@@ -1,0 +1,21 @@
+uuid: b6c30b3e-9502-4648-92b6-2257bc7a348e
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aufgabenverteilung
+    - node.type.projekt
+  module:
+    - text
+id: node.projekt.field_aufgabenverteilung
+field_name: field_aufgabenverteilung
+entity_type: node
+bundle: projekt
+label: Aufgabenverteilung
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

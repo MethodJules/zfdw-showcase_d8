@@ -1,0 +1,19 @@
+uuid: 3488923e-f3fb-4935-acfd-59297b53b3e7
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_zugehoerige_publikationen
+field_name: field_zugehoerige_publikationen
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

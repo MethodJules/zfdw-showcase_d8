@@ -1,0 +1,20 @@
+uuid: 8146e40c-318f-4cda-bb93-12b45f6f7ba1
+langcode: de
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - adaptivetheme_admin
+id: adaptivetheme_admin_system_powered_by
+theme: adaptivetheme_admin
+region: ''
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

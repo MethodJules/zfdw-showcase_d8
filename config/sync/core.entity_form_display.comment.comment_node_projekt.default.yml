@@ -1,0 +1,43 @@
+uuid: 62582fcc-fda2-46fe-8025-8b8f9f68ecca
+langcode: de
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_projekt
+    - field.field.comment.comment_node_projekt.comment_body
+  module:
+    - text
+id: comment.comment_node_projekt.default
+targetEntityType: comment
+bundle: comment_node_projekt
+mode: default
+content:
+  author:
+    weight: -2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_body:
+    weight: 0
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

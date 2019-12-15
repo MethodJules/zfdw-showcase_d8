@@ -1,0 +1,22 @@
+uuid: d1149527-eff9-4916-832d-2fac0784513f
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ort_location
+    - node.type.ort
+  module:
+    - geofield
+id: node.ort.field_ort_location
+field_name: field_ort_location
+entity_type: node
+bundle: ort
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

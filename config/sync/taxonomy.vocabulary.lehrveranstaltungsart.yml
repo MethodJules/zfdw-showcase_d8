@@ -1,0 +1,8 @@
+uuid: 62f5c0f6-52b0-4a29-b6d4-748f7a3be052
+langcode: de
+status: true
+dependencies: {  }
+name: Lehrveranstaltungsart
+vid: lehrveranstaltungsart
+description: ''
+weight: 0

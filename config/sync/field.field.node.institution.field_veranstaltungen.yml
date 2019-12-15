@@ -1,0 +1,30 @@
+uuid: d0259c80-d738-4ca6-b7ab-60409899281c
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_veranstaltungen
+    - node.type.event
+    - node.type.institution
+id: node.institution.field_veranstaltungen
+field_name: field_veranstaltungen
+entity_type: node
+bundle: institution
+label: Veranstaltungen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      event: event
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

@@ -1,0 +1,30 @@
+uuid: 489f712c-4377-47d6-bc29-07fa7c1a3f2e
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_koop_ansprechpartner
+    - node.type.kooperationspartner
+    - node.type.person
+id: node.kooperationspartner.field_koop_ansprechpartner
+field_name: field_koop_ansprechpartner
+entity_type: node
+bundle: kooperationspartner
+label: Ansprechpartner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

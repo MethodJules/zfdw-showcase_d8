@@ -1,0 +1,14 @@
+uuid: f9fc5184-14ca-4ef7-8e8e-ca1572fbf3d4
+name: 'DAS ZENTRUM FÜR DIGITALEN WANDEL | CENTER FOR DIGITAL CHANGE'
+mail: hoferj@uni-hildesheim.de
+slogan: ''
+page:
+  403: /
+  404: /
+  front: /node/181
+admin_compact_mode: false
+weight_select_max: 100
+langcode: de
+default_langcode: de
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

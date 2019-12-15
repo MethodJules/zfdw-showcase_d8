@@ -1,0 +1,23 @@
+uuid: 79631f18-f431-4f92-b7d3-dc9e2b55c206
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_person_des_zfdw
+    - node.type.person
+id: node.person.field_person_des_zfdw
+field_name: field_person_des_zfdw
+entity_type: node
+bundle: person
+label: 'Person des ZfDW'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Ja
+  off_label: Nein
+field_type: boolean

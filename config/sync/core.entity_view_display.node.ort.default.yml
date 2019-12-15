@@ -1,0 +1,50 @@
+uuid: 39b939e7-f22d-4cf8-86b1-6251618e3ac9
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.ort.body
+    - field.field.node.ort.field_ort_adresse
+    - field.field.node.ort.field_ort_location
+    - node.type.ort
+  module:
+    - address
+    - geofield
+    - text
+    - user
+id: node.ort.default
+targetEntityType: node
+bundle: ort
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ort_adresse:
+    label: above
+    weight: 1
+    type: address_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ort_location:
+    label: above
+    weight: 2
+    type: geofield_default
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

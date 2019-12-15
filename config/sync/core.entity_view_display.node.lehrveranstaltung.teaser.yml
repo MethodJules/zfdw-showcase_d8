@@ -1,0 +1,50 @@
+uuid: c30ad67d-a53a-4655-94df-057f6e9c0b2b
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lehrveranstaltung.body
+    - field.field.node.lehrveranstaltung.field_art_der_lehrveranstaltung
+    - field.field.node.lehrveranstaltung.field_durchfuehrende_person
+    - field.field.node.lehrveranstaltung.field_lehre_ort
+    - field.field.node.lehrveranstaltung.field_lehrmaterialien
+    - field.field.node.lehrveranstaltung.field_raum
+    - field.field.node.lehrveranstaltung.field_uhrzeit
+    - field.field.node.lehrveranstaltung.field_verantwortliche_person
+    - field.field.node.lehrveranstaltung.field_zeitraum
+    - field.field.node.lehrveranstaltung.field_zugang_zur_lehrveranstaltu
+    - node.type.lehrveranstaltung
+  module:
+    - text
+    - user
+id: node.lehrveranstaltung.teaser
+targetEntityType: node
+bundle: lehrveranstaltung
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_art_der_lehrveranstaltung: true
+  field_durchfuehrende_person: true
+  field_lehre_ort: true
+  field_lehrmaterialien: true
+  field_raum: true
+  field_uhrzeit: true
+  field_verantwortliche_person: true
+  field_zeitraum: true
+  field_zugang_zur_lehrveranstaltu: true
+  langcode: true
+  search_api_excerpt: true

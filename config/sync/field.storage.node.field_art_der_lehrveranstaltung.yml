@@ -1,0 +1,20 @@
+uuid: ea94f90f-cc0e-4a97-a719-3adebb861b2c
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_art_der_lehrveranstaltung
+field_name: field_art_der_lehrveranstaltung
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

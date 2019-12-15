@@ -1,0 +1,26 @@
+uuid: 088ed761-c374-494c-92e8-b1c0663af992
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_projektklasse
+    - node.type.projekt
+    - taxonomy.vocabulary.tax_morph_m_projektklasse
+id: node.projekt.field_projektklasse
+field_name: field_projektklasse
+entity_type: node
+bundle: projekt
+label: Projektart
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tax_morph_m_projektklasse: tax_morph_m_projektklasse
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

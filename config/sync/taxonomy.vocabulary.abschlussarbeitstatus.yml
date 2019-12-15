@@ -1,0 +1,8 @@
+uuid: 6282464e-fc9f-4e19-a83f-af63767b1145
+langcode: de
+status: true
+dependencies: {  }
+name: Abschlussarbeitstatus
+vid: abschlussarbeitstatus
+description: ''
+weight: 0

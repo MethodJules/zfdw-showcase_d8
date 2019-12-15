@@ -1,0 +1,26 @@
+uuid: 032f6bf5-cbef-4f63-8b7b-c268f76d83ca
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_keywords_fe
+    - node.type.forschungsergebnis
+    - taxonomy.vocabulary.forums
+id: node.forschungsergebnis.field_keywords_fe
+field_name: field_keywords_fe
+entity_type: node
+bundle: forschungsergebnis
+label: Keywords
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      forums: forums
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: bd6cab03-4a61-420a-b127-2c75a5964e3a
+langcode: de
+status: true
+dependencies: {  }
+name: Projektklasse
+vid: tax_morph_m_projektklasse
+description: ''
+weight: 0

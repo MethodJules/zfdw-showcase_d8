@@ -1,0 +1,23 @@
+uuid: 6fec95ea-1ece-4303-a7c2-dc5c79633908
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.fachbereich
+  module:
+    - text
+id: node.fachbereich.body
+field_name: body
+entity_type: node
+bundle: fachbereich
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

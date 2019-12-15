@@ -1,0 +1,30 @@
+uuid: d73a3923-c313-4c10-a24a-ba642e0613bf
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forschungsergebnisse
+    - node.type.forschungsergebnis
+    - node.type.projekt
+id: node.projekt.field_forschungsergebnisse
+field_name: field_forschungsergebnisse
+entity_type: node
+bundle: projekt
+label: Forschungsergebnis(se)
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      forschungsergebnis: forschungsergebnis
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

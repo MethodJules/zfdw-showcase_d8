@@ -1,0 +1,18 @@
+uuid: fe1fd4ab-d175-429c-a814-65f31d2f10fe
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.lehrveranstaltung
+id: node.lehrveranstaltung.title
+field_name: title
+entity_type: node
+bundle: lehrveranstaltung
+label: 'Name der Lehrveranstaltung'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

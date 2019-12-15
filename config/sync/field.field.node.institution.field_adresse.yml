@@ -1,0 +1,25 @@
+uuid: 1734614e-57d9-47e0-93fe-6960d6261f3f
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adresse
+    - node.type.institution
+  module:
+    - address
+id: node.institution.field_adresse
+field_name: field_adresse
+entity_type: node
+bundle: institution
+label: Adresse
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address

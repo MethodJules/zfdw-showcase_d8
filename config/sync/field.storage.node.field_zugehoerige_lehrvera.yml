@@ -1,0 +1,19 @@
+uuid: a133a8be-37bc-43f4-af48-4a3e41a65406
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_zugehoerige_lehrvera
+field_name: field_zugehoerige_lehrvera
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

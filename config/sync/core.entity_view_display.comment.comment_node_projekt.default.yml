@@ -1,0 +1,29 @@
+uuid: 01957578-ab3d-44c6-aac9-c6d945ca9828
+langcode: de
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_projekt
+    - field.field.comment.comment_node_projekt.comment_body
+  module:
+    - text
+id: comment.comment_node_projekt.default
+targetEntityType: comment
+bundle: comment_node_projekt
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

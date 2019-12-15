@@ -1,0 +1,26 @@
+uuid: 6c5791bd-6210-4078-8097-a51911d4296e
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forschungsstatus
+    - node.type.forschungsergebnis
+    - taxonomy.vocabulary.tax_morph_m_forschungsstatus
+id: node.forschungsergebnis.field_forschungsstatus
+field_name: field_forschungsstatus
+entity_type: node
+bundle: forschungsergebnis
+label: Forschungsstatus
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tax_morph_m_forschungsstatus: tax_morph_m_forschungsstatus
+  handler: 'default:taxonomy_term'
+field_type: entity_reference
