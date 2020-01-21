@@ -1,0 +1,22 @@
+uuid: 658c3224-88fd-4958-8339-5012d393e224
+langcode: de
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - zfdw_barrio
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: zfdw_barrio_indeko7_system_main
+theme: zfdw_barrio
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

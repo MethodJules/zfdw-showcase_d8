@@ -1,13 +1,13 @@
-uuid: 379b10d9-9257-45b9-b88c-67551e8d15d2
+uuid: 4c626e81-9622-4265-92b8-9a17a9c77f57
 langcode: de
 status: true
 dependencies:
   theme:
-    - bartik
+    - zfdw_barrio
 _core:
   default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
-id: bartik_local_tasks
-theme: bartik
+id: zfdw_barrio_local_tasks
+theme: zfdw_barrio
 region: content
 weight: -4
 provider: null

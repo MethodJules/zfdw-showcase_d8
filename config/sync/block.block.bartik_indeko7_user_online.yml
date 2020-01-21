@@ -1,4 +1,4 @@
-uuid: 932fc1ac-4be9-4f1e-8ed5-a96b342b6c25
+uuid: 4af1cbb3-cb46-41ca-9ee2-dee2840ce365
 langcode: de
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     - views
   theme:
     - bartik
-id: indeko7_user_online
+id: bartik_indeko7_user_online
 theme: bartik
 region: sidebar_first
 weight: -4

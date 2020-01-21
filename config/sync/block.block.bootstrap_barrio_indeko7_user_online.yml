@@ -1,0 +1,24 @@
+uuid: f1eee865-a922-4548-9fed-61beab44e2c5
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.who_s_online
+  module:
+    - views
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_indeko7_user_online
+theme: bootstrap_barrio
+region: sidebar_first
+weight: -4
+provider: null
+plugin: 'views_block:who_s_online-who_s_online_block'
+settings:
+  id: 'views_block:who_s_online-who_s_online_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: '10'
+visibility: {  }

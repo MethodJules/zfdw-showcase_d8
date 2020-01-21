@@ -1,15 +1,15 @@
-uuid: 8114c0ff-8d67-47a2-8237-bda544cadc2e
+uuid: fff78365-5524-424d-915a-eea61f5520ea
 langcode: de
 status: false
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - zfdw_barrio
 _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: bartik_breadcrumbs
-theme: bartik
+id: zfdw_barrio_breadcrumbs
+theme: zfdw_barrio
 region: breadcrumb
 weight: 0
 provider: null

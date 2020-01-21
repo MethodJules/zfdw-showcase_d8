@@ -1,16 +1,16 @@
-uuid: a4825360-d0cc-4998-b528-7618f9105db8
+uuid: 58005012-d646-4361-8b24-24b9329c1acf
 langcode: de
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - zfdw_barrio
 _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
-id: bartik_branding
-theme: bartik
-region: header
+id: zfdw_barrio_branding
+theme: zfdw_barrio
+region: top_header
 weight: -5
 provider: null
 plugin: system_branding_block

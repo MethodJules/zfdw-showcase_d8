@@ -1,15 +1,15 @@
-uuid: 3f329211-5663-4d00-885f-4e79f34d1e3e
+uuid: ff12dccf-9323-44e4-877e-f650bfe16442
 langcode: de
 status: true
 dependencies:
   module:
     - search
   theme:
-    - bartik
+    - zfdw_barrio
 _core:
   default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
-id: indeko7_search_form
-theme: bartik
+id: zfdw_barrio_indeko7_search_form
+theme: zfdw_barrio
 region: sidebar_first
 weight: -6
 provider: null

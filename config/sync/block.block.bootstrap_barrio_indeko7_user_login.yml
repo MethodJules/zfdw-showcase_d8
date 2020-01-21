@@ -1,0 +1,20 @@
+uuid: 38f62885-737c-42e1-8aa5-516193cdad25
+langcode: de
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_indeko7_user_login
+theme: bootstrap_barrio
+region: sidebar_first
+weight: -7
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility: {  }

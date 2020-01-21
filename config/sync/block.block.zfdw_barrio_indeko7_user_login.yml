@@ -1,13 +1,13 @@
-uuid: 26740c93-f498-4e5b-9751-8655f26a02d4
+uuid: 6d8cc15b-829e-4419-8924-0eb3acb677fb
 langcode: de
 status: true
 dependencies:
   module:
     - user
   theme:
-    - bartik
-id: indeko7_user_login
-theme: bartik
+    - zfdw_barrio
+id: zfdw_barrio_indeko7_user_login
+theme: zfdw_barrio
 region: sidebar_first
 weight: -7
 provider: null
