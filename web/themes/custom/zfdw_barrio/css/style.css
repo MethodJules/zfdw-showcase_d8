@@ -3,3 +3,86 @@
  * Subtheme specific CSS.
  */
 
+/* default css */
+@media (min-width: 300px){
+    html, body { overflow-x: hidden; }
+}
+@media (max-width: 299px){
+    html, body { overflow-x: scroll; }
+}
+
+html { overflow-y: scroll; width: 100%;}
+
+a, a *, .animate { -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s;  }
+.animate_fast { -webkit-transition: all 0.3s; -moz-transition: all 0.2s; -ms-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+.animate_sub_fast * { -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -ms-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+body { min-width: 300px; overflow-x: hidden; color: #000; font-family: 'HamburgSans', Arial, Verdana, sans-serif; background: #FFF; font-size: 20px; line-height: 1.5em;  }
+.fas, .far, .fab { -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none; transition: none; }
+
+h1, h2, h3, h4, h5 { font-family: 'HamburgSans', Arial, Verdana, sans-serif; font-weight: bold; text-align: left; background: none; color: #000; border-left: none; font-size: 40px; margin: 0 0 35px 0; padding: 0; }
+h1 a, h2 a, h3 a, h4 a, h5 a { color: inherit !important; }
+h1 { font-size: 52px; }
+h2 { font-size: 34px; }
+h3 { font-size: 19px; }
+
+ul { margin: 0; padding: 0; list-style: none; }
+
+a, a:visited, a:active{ color: #003063; text-decoration: none; word-wrap: break-word; }
+a:hover { color: #003063; text-decoration: underline; }
+a, a:hover, a:active, a:focus { outline: 0; }
+nav a, a:focus { text-decoration: none; }
+p { margin-bottom: 20px; }
+
+a.btn { display: block; width: 100%; max-width: 340px; margin: 45px 0; font-size: 20px; padding: 15px 15px 8px 15px; border: 2px solid #003063; color: #003063; font-weight: bold; border-radius: 35px; -webkit-border-radius: 35px; -moz-border-radius: 35px; -ms-border-radius: 35px; -o-border-radius: 35px; }
+a.btn:hover { background: #003063; color: #FFF; }
+a.btn.inverted { border: 2px solid #FFF;  background: #003063; color: #FFF; font-weight: normal; }
+a.btn.inverted:hover { background: #FFF; color: #003063; }
+a.big { font-size: 25px; }
+
+.centered { display: inline-block; margin-left: auto !important; margin-right: auto !important; }
+h2.centered { display: block; text-align: center; }
+
+.fa-chevron-left, .fa-chevron-right { color: #1A386E; font-size: 18px; }
+
+.layout { margin-bottom: 120px; }
+
+/* SEITENBREITE */
+#page main#content article, ol.breadcrumb, .regular_width { max-width: 1460px;  width: 100%; margin: 0 auto; padding: 0 30px;  }
+/* ID DER STARTSEITE
+#page main#content article[data-history-node-id="3"]{ max-width: none !important; width: 100%; margin: 0 auto; padding: 0 30px;  }
+@media (min-width: 1600px) {
+    #page main#content article, ol.breadcrumb, .regular_width { max-width: 1560px; padding: 0 80px;  }
+}
+*/
+
+/* BOOTSTRAP 4 COL PADDING */
+@media (min-width: 1600px) {
+    .row { margin-left: -30px; margin-right: -30px; }
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
+    { padding-left: 30px; padding-right: 30px; }
+
+    .small-cols .row { margin-left: -12px; margin-right: -12px; }
+    .small-cols .col, .small-cols .col-1, .small-cols .col-10, .small-cols .col-11, .small-cols .col-12, .small-cols .col-2, .small-cols .col-3, .small-cols .col-4, .small-cols .col-5, .small-cols .col-6, .small-cols .col-7, .small-cols .col-8, .small-cols .col-9, .small-cols .col-auto, .small-cols .col-lg, .small-cols .col-lg-1, .small-cols .col-lg-10, .small-cols .col-lg-11, .small-cols .col-lg-12, .small-cols .col-lg-2, .small-cols .col-lg-3, .small-cols .col-lg-4, .small-cols .col-lg-5, .small-cols .col-lg-6, .small-cols .col-lg-7, .small-cols .col-lg-8, .small-cols .col-lg-9, .small-cols .col-lg-auto, .small-cols .col-md, .small-cols .col-md-1, .small-cols .col-md-10, .small-cols .col-md-11, .small-cols .col-md-12, .small-cols .col-md-2, .small-cols .col-md-3, .small-cols .col-md-4, .small-cols .col-md-5, .small-cols .col-md-6, .small-cols .col-md-7, .small-cols .col-md-8, .small-cols .col-md-9, .small-cols .col-md-auto, .small-cols .col-sm, .small-cols .col-sm-1, .small-cols .col-sm-10, .small-cols .col-sm-11, .small-cols .col-sm-12, .small-cols .col-sm-2, .small-cols .col-sm-3, .small-cols .col-sm-4, .small-cols .col-sm-5, .small-cols .col-sm-6, .small-cols .col-sm-7, .small-cols .col-sm-8, .small-cols .col-sm-9, .small-cols .col-sm-auto, .small-cols .col-xl, .small-cols .col-xl-1, .small-cols .col-xl-10, .small-cols .col-xl-11, .small-cols .col-xl-12, .small-cols .col-xl-2, .small-cols .col-xl-3, .small-cols .col-xl-4, .small-cols .col-xl-5, .small-cols .col-xl-6, .small-cols .col-xl-7, .small-cols .col-xl-8, .small-cols .col-xl-9, .small-cols .col-xl-auto
+    { padding-left: 12px; padding-right: 12px; }
+}
+
+/* HEADER */
+.header {
+    border: dotted;
+    background-color: #0099be;
+}
+
+/* CONTAINER */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1600px;
+    }
+}
+
+
+
+/* BREADCRUMB */
+ol.breadcrumb { background: none; margin-bottom: 50px;}
+ol.breadcrumb a, ol.breadcrumb .breadcrumb-item, ol.breadcrumb .breadcrumb-item::before{ font-size: 18px; color: #999; }
+
+/* HEADER  / NAV*/
