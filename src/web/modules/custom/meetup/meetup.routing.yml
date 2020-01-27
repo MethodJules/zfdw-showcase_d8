@@ -1,0 +1,28 @@
+meetup.content:
+    path: '/meetup'
+    defaults:
+        _controller: 'Drupal\meetup\Controller\MeetupController::content'
+    requirements:
+        _permission: 'access content'
+
+meetup.interested:
+  path: 'meetup/interested/insert/{event_id}'
+  defaults:
+    _controller: 'Drupal\meetup\Controller\MeetupController::insertUserIsInterested'
+  requirements:
+    _access: 'TRUE'
+
+meetup.update_interested:
+  path: 'meetup/interested/update/{event_id}'
+  defaults:
+    _controller: 'Drupal\meetup\Controller\MeetupController::updateUserIsInterested'
+  requirements:
+    _access: 'TRUE'
+
+meetup.participate:
+  path: 'meetup/participate/insert/{event_id}'
+  defaults:
+    _controller: 'Drupal\meetup\Controller\MeetupController::insertUserIsParticipating'
+  requirements:
+    _access: 'TRUE'
+
