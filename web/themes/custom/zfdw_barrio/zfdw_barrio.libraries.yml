@@ -6,6 +6,7 @@ global-styling:
     component:
       css/style.css: {}
       css/colors.css: {}
+      css/zfdw-style.css: {}
 bootstrap:
   js:
     /libraries/popper/popper.min.js: {}
