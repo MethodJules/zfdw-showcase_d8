@@ -1,4 +1,4 @@
-uuid: bc6566c4-3462-45da-9d59-a17faae56012
+uuid: 564fd3ba-80a8-42b3-a3a2-ea46838448e9
 langcode: de
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: wiTKND8Vi_2guGPCSCjciyClZs7LVIQ_ruTzlkE_Bg0
 id: search-api-server-form
-label: 'Hinzufügen oder Bearbeiten eines Search API-Servers'
+label: 'Add or edit a Search API server'
 module: search_api
 routes:
   -
@@ -18,22 +18,22 @@ tips:
   search-api-server-form-introduction:
     id: search-api-server-form-introduction
     plugin: text
-    label: 'Hinzufügen oder Bearbeiten eines Servers'
-    body: 'Dieses Formular kann verwendet werden, um einen bestehenden Server zu bearbeiten oder einen neuen Server zur Website hinzuzufügen. Server speichern die auf der Website indizierten Daten.'
+    label: 'Adding or editing a Server'
+    body: 'This form can be used to edit an existing server or add a new server to your site. Servers will hold your indexed data.'
     weight: 1
   search-api-server-form-name:
     id: search-api-server-form-name
     plugin: text
-    label: Servername
-    body: 'Einen Namen, zur Identifikation des Servers, angeben. Zum Beispiel „Solr-Server". Der Name wird nur im Verwaltungsbereich angezeigt.'
+    label: 'Server name'
+    body: 'Enter a name to identify this server. For example, "Solr server". This will only be displayed in the admin user interface.'
     weight: 2
     attributes:
       data-id: edit-name
   search-api-server-form-description:
     id: search-api-server-form-description
     plugin: text
-    label: 'Beschreibung des Servers'
-    body: 'Optional kann eine Beschreibung eingeben werden, um die Funktion des Servers näher zu beschreiben. Die Beschreibung wird nur im Verwaltungsbereich der Website angezeigt.'
+    label: 'Server description'
+    body: 'Optionally, enter a description to explain the function of the server in more detail. This will only be displayed in the admin user interface.'
     weight: 3
     attributes:
       data-id: edit-description
@@ -41,7 +41,7 @@ tips:
     id: search-api-server-form-backend
     plugin: text
     label: 'Server backend'
-    body: 'Server können auf verschiedenen Technologien basieren. Diese werden als "Backends" bezeichnet. Ein Server verwendet genau ein Backend und kann später nicht mehr geändert werden. Sie können das Backend "Datenbank" zur Verfügung stellen, indem Sie das Modul „Datenbanksuche" aktivieren. Ein weiteres sehr verbreitetes Backend ist <a href="https://www.drupal.org/project/search_api_solr">„Solr"</a>, das separat eingerichtet werden muss.'
+    body: 'Servers can be based on different technologies. These are called "backends". A server uses exactly one backend and cannot change it later. You can make the "Database" backend available by enabling the "Database Search" module. Another very common backend is <a href="https://www.drupal.org/project/search_api_solr">"Solr"</a>, which requires to be set up separately.'
     weight: 4
     attributes:
       data-id: edit-backend

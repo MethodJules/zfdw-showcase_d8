@@ -1,4 +1,4 @@
-uuid: d277e571-4920-4fcc-aef7-f94c4a2090ca
+uuid: 885808a6-8003-4e05-8e88-92ddb848944f
 langcode: de
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: mP2RtTYiDo6dp1q8hXxx2Wgr_1ZvtN7AijjXrwFQV_k
 id: search-api-index-fields
-label: 'In diesem Index indizierte Felder'
+label: 'Fields indexed in this index'
 module: search_api
 routes:
   -
@@ -16,14 +16,14 @@ tips:
   search-api-index-fields-introduction:
     id: search-api-index-fields-introduction
     plugin: text
-    label: 'In diesem Index indizierte Felder'
-    body: 'Diese Seite listet auf, welche Felder in diesem Index indiziert sind, gruppiert nach Datenquellen. (Datasource-unabhängige Felder werden unter "Allgemein" aufgelistet.) Indizierte Felder können verwendet werden, um Filter hinzuzufügen oder Ansichten oder anderen Suchanzeigen, die auf dem Index basieren, zu sortieren. Felder vom Typ „Volltext" können auch für die Volltextsuche verwendet werden.'
+    label: 'Fields indexed in this index'
+    body: 'This page lists which fields are indexed in this index, grouped by datasource. (Datasource-independent fields are listed under "General".) Indexed fields can be used to add filters or sorting to views or other search displays based on the index. Fields with type "Fulltext" can also be used for fulltext searching.'
     weight: 1
   search-api-index-fields-add:
     id: search-api-index-fields-add
     plugin: text
-    label: 'Felder hinzufügen'
-    body: 'Mit der Schaltfläche „Felder hinzufügen" können Sie diesem Index zusätzliche Felder hinzufügen.'
+    label: 'Add fields'
+    body: 'With the "Add fields" button you can add additional fields to this index.'
     weight: 2
     attributes:
       data-class: 'button-action[data-drupal-selector="edit-add-field"]'
@@ -39,15 +39,15 @@ tips:
     id: search-api-index-fields-machine-name
     plugin: text
     label: 'Machine name'
-    body: 'Die interne ID, die für dieses Feld verwendet werden soll. Kann von unerfahrenen Benutzern in den meisten Fällen sicher ignoriert werden. Das Ändern des Rechnernamens eines Feldes erfordert eine Neuindizierung des Index.'
+    body: 'The internal ID to use for this field. Can safely be ignored by inexperienced users in most cases. Changing a field''s machine name requires reindexing of the index.'
     weight: 4
     attributes:
       data-class: 'details-wrapper:nth(0) table thead th:nth(1)'
   search-api-index-fields-property-path:
     id: search-api-index-fields-property-path
     plugin: text
-    label: Eigenschaftspfad
-    body: 'Die interne Beziehung, die das indizierte Element mit dem Feld verknüpft, wobei die Links durch Doppelpunkte (:) getrennt sind. Dies kann für fortgeschrittene Benutzer nützliche Informationen sein, kann aber ansonsten ignoriert werden.'
+    label: 'Property path'
+    body: 'The internal relationship linking the indexed item to the field, with links being separated by colons (:). This can be useful information for advanced users, but can otherwise be ignored.'
     weight: 5
     attributes:
       data-class: 'details-wrapper:nth(0) table thead th:nth(2)'
@@ -55,7 +55,7 @@ tips:
     id: search-api-index-fields-type
     plugin: text
     label: Type
-    body: 'Der Datentyp, der bei der Indizierung des Feldes verwendet werden soll. Legt fest, wie ein Feld bei der Suche verwendet werden kann. Informationen zu den verfügbaren Typen finden Sie in der Box <a href="#search-api-data-types-table">"Datentyptabelle"</a> am Ende der Seite.'
+    body: 'The data type to use when indexing the field. Determines how a field can be used in searches. For information on the available types, see the <a href="#search-api-data-types-table">"Data types" box</a> at the bottom of the page.'
     weight: 6
     attributes:
       data-class: 'details-wrapper:nth(0) table thead th:nth(3)'
@@ -70,15 +70,15 @@ tips:
   search-api-index-fields-edit:
     id: search-api-index-fields-edit
     plugin: text
-    label: 'Feld bearbeiten'
-    body: 'Einige Felder besitzen zusätzliche Konfigurationen. Für solche Felder wird ein Link mit der Aufschrift Bearbeiten in der Spalte Aktionen angezeigt.'
+    label: 'Edit field'
+    body: 'Some fields have additional configuration available, in which case an "Edit" link is displayed in the "Operations" column.'
     weight: 8
     attributes:
       data-class: 'details-wrapper:nth(0) table tbody td:nth(5) a'
   search-api-index-fields-remove:
     id: search-api-index-fields-remove
     plugin: text
-    label: 'Feld löschen'
+    label: 'Remove field'
     body: 'Removes a field from the index again. (Note: Sometimes, a field is required (for example, by a processor) and cannot be removed.)'
     weight: 9
     attributes:
@@ -86,7 +86,7 @@ tips:
   search-api-index-fields-submit:
     id: search-api-index-fields-submit
     plugin: text
-    label: 'Änderungen speichern'
+    label: 'Save changes'
     body: 'This saves all changes made to the fields for this index. Until this button is pressed, all added, changed or removed fields will only be stored temporarily and not effect the actual index used in the rest of the site.'
     weight: 10
     attributes:
@@ -94,7 +94,7 @@ tips:
   search-api-index-fields-cancel:
     id: search-api-index-fields-cancel
     plugin: text
-    label: 'Verwerfe Änderungen'
+    label: 'Cancel changes'
     body: 'If you have made changes to the index''s fields but not yet saved them, the "Cancel" link lets you discard those changes.'
     weight: 10
     attributes:

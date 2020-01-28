@@ -1,4 +1,4 @@
-uuid: 86d1c34c-7374-4402-a990-bc912180e19c
+uuid: 7f6613f5-e4fe-436e-9386-8e782cb8fa02
 langcode: de
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: vrJLX_BEpVcWa6OU7FvRAUfErBOxQBhPtzuKeNo4M2M
 id: search-api-index
-label: 'Informationen über einen Index'
+label: 'Information about an index'
 module: search_api
 routes:
   -
@@ -16,14 +16,14 @@ tips:
   search-api-index-introduction:
     id: search-api-index-introduction
     plugin: text
-    label: 'Informationen über einen Index'
-    body: 'Auf dieser Seite wird eine Zusammenfassung eines Suchindex und seines Status angezeigt.'
+    label: 'Information about an index'
+    body: 'This page shows a summary of a search index and its status.'
     weight: 1
   search-api-index-index-status:
     id: search-api-index-index-status
     plugin: text
-    label: 'Index Status'
-    body: 'Dies ist eine Zusammenfassung darüber, wie viele Elemente in diesem Index bekannt sind und wie viele Elemente in ihrer neuesten Version indiziert wurden. Elemente, die noch nicht indiziert wurden, können von der Suchfunktion nicht gefunden werden.'
+    label: 'Index status'
+    body: 'This gives a summary about how many items are known for this index, and how many have been indexed in their latest version. Items that are not indexed yet cannot be found by searches.'
     weight: 2
     attributes:
       data-class: search-api-index-status
@@ -31,15 +31,15 @@ tips:
     id: search-api-index-status
     plugin: text
     label: Status
-    body: 'Zeigt an, ob der Index aktuell aktiviert oder deaktiviert ist.'
+    body: 'Shows whether the index is currently enabled or disabled.'
     weight: 3
     attributes:
       data-class: search-api-index-summary--status
   search-api-index-datasources:
     id: search-api-index-datasources
     plugin: text
-    label: Datenkquellen
-    body: 'Listet alle für diesen Index aktivierten Datenquellen auf.'
+    label: Datasources
+    body: 'Lists all datasources that are enabled for this index.'
     weight: 4
     attributes:
       data-class: search-api-index-summary--datasource
@@ -47,7 +47,7 @@ tips:
     id: search-api-index-tracker
     plugin: text
     label: Tracker
-    body: 'Der Tracker, der vom Index verwendet wird. Standardmäßig ist nur („Standard") verfügbar.'
+    body: 'The tracker used by the index. Only one ("Default") is available by default.'
     weight: 5
     attributes:
       data-class: search-api-index-summary--tracker
@@ -62,16 +62,16 @@ tips:
   search-api-index-server-index-status:
     id: search-api-index-server-index-status
     plugin: text
-    label: Server-Indexstatus
-    body: 'Bei aktivierten Indizes wird hier die Anzahl der Elemente angegeben, die tatsächlich vom Server abgerufen werden können. Warum diese Zahl von der unter "Indexstatus",  angegebenen Zahl abweichen kann, entnehmen Sie bitte der <a href="https://www.drupal.org/docs/8/modules/search-api/getting-started/frequently-asked-questions#server-index-status">Dokumentation</a> des Moduls.'
+    label: 'Server index status'
+    body: 'For enabled indexes, the number of items that can actually be retrieved from the server is listed here. For reasons why this number might differ from the number under "Index status", <a href="https://www.drupal.org/docs/8/modules/search-api/getting-started/frequently-asked-questions#server-index-status">see the module''s documentation</a>.'
     weight: 7
     attributes:
       data-class: search-api-index-summary--server-index-status
   search-api-index-cron-batch-size:
     id: search-api-index-cron-batch-size
     plugin: text
-    label: 'Anzahl der Elemente, die bei jedem Cron-Lauf indiziert werden sollen.'
-    body: 'Die Anzahl der Elemente, die während eines Cron-Laufes auf einmal indiziert werden.'
+    label: 'Cron batch size'
+    body: 'The number of items that will be indexed at once during cron runs.'
     weight: 8
     attributes:
       data-class: search-api-index-summary--cron-batch-size
@@ -86,7 +86,7 @@ tips:
   search-api-index-tracking:
     id: search-api-index-tracking
     plugin: text
-    label: 'Elemente für den Index erfassen'
+    label: 'Track items for index'
     body: 'In certain situations, the index''s tracker doesn''t have the latest state of the items available for indexing. This will be automatically rectified during cron runs, but can also be manually triggered here, with the "Track now" button.'
     weight: 10
     attributes:
@@ -94,7 +94,7 @@ tips:
   search-api-index-reindex:
     id: search-api-index-reindex
     plugin: text
-    label: 'Alle Elemente zur Neuindizierung in die Warteschlange stellen'
+    label: 'Queue all items for reindexing'
     body: 'This will queue all items on this index for reindexing. Previously indexed data will remain on the search server, so searches on this index will continue to yield results.'
     weight: 11
     attributes:
@@ -102,7 +102,7 @@ tips:
   search-api-index-clear:
     id: search-api-index-clear
     plugin: text
-    label: 'Alle indizierten Daten löschen'
+    label: 'Clear all indexed data'
     body: 'This will remove all indexed content for this index from the search server and queue it for reindexing. Searches on this index will not return any results until items are reindexed.'
     weight: 12
     attributes:

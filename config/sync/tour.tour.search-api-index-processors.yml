@@ -1,4 +1,4 @@
-uuid: 114ed998-ab4d-4cc2-8743-daf8ee6cae8c
+uuid: e314e1fe-9564-457f-9aa3-bd68269053cf
 langcode: de
 status: true
 dependencies:
@@ -22,15 +22,15 @@ tips:
   search-api-index-processors-enable:
     id: search-api-index-processors-enable
     plugin: text
-    label: 'Prozessoren aktivieren'
-    body: 'Hier werden alle für diesen Index verfügbaren Prozessoren aufgelistet. Zu aktivierende Prozessoren können hier ausgewählt werden. (Hinweis: Einige Prozessoren können nicht deaktiviert werden.)'
+    label: 'Enable processors'
+    body: 'This lists all processors available for this index and lets you choose the ones that should be active. (Note: Some processors cannot be disabled.)'
     weight: 2
     attributes:
       data-id: edit-status
   search-api-index-processors-weights:
     id: search-api-index-processors-weights
     plugin: text
-    label: Prozessorreihenfolge
+    label: 'Processor order'
     body: 'This shows you which enabled processors will be active in the different parts of the indexing/searching workflow, and lets you re-arrange them. This should usually not be necessary, and only be used by advanced users as some processors will lead to unexpected results when used in the wrong order.'
     weight: 3
     attributes:
@@ -38,8 +38,8 @@ tips:
   search-api-index-processors-settings:
     id: search-api-index-processors-settings
     plugin: text
-    label: Prozessoreinstellungen
-    body: 'Einige Prozessoren stellen zusätzliche Konfigurationen zur Verfügung. Diese Konfigurationen können hier angepasst werden.'
+    label: 'Processor settings'
+    body: 'Some processors have additional configuration available, which you are able to change here.'
     weight: 4
     attributes:
       data-class: form-type-vertical-tabs

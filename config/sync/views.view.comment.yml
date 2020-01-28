@@ -54,8 +54,8 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: '‹ vorherige Seite'
-            next: 'nächste Seite ›'
+            previous: '‹ previous'
+            next: 'next ›'
             first: '« erste Seite'
             last: 'letzte Seite »'
           expose:

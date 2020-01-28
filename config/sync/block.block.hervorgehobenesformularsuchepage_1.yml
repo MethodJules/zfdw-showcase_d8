@@ -1,0 +1,23 @@
+uuid: b568eddd-313c-44b4-b998-0d3788fa9d5d
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.suche
+  module:
+    - views
+  theme:
+    - zfdw_barrio
+id: hervorgehobenesformularsuchepage_1
+theme: zfdw_barrio
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'views_exposed_filter_block:suche-page_1'
+settings:
+  id: 'views_exposed_filter_block:suche-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility: {  }

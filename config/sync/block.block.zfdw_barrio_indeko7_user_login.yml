@@ -9,7 +9,7 @@ dependencies:
 id: zfdw_barrio_indeko7_user_login
 theme: zfdw_barrio
 region: sidebar_first
-weight: -7
+weight: -4
 provider: null
 plugin: user_login_block
 settings:
