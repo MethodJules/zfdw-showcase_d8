@@ -67,9 +67,17 @@ h2.centered { display: block; text-align: center; }
 }
 
 /* HEADER */
-.header {
+/*.header {
     border: dotted;
     background-color: #0099be;
+}*/
+
+#navbar-main {
+  float: right;
+}
+
+#main-wrapper {
+  clear: both;
 }
 
 /* CONTAINER */

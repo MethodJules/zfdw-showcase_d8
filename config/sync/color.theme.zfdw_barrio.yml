@@ -1,6 +1,6 @@
 palette:
   top: '#055a8e'
-  bottom: '#0099BE'
+  bottom: '#ffffff'
   bg: '#ffffff'
   sidebar: '#f6f6f2'
   sidebarborders: '#f9f9f9'
@@ -10,9 +10,9 @@ palette:
   titleslogan: '#fffeff'
   text: '#3b3b3b'
   link: '#0071b3'
-logo: 'public://color/zfdw_barrio-29f75246/logo.svg'
+logo: 'public://color/zfdw_barrio-5af767c5/logo.svg'
 stylesheets:
-  - 'public://color/zfdw_barrio-29f75246/colors.css'
+  - 'public://color/zfdw_barrio-5af767c5/colors.css'
 files:
-  - 'public://color/zfdw_barrio-29f75246/logo.svg'
-  - 'public://color/zfdw_barrio-29f75246/colors.css'
+  - 'public://color/zfdw_barrio-5af767c5/logo.svg'
+  - 'public://color/zfdw_barrio-5af767c5/colors.css'
