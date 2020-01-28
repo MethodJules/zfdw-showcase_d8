@@ -56,6 +56,7 @@ permissions:
   - 'entityconnect edit button'
   - geocoder_service_all_handlers
   - 'import from file'
+  - 'opt-in or out of matomo tracking'
   - 'post comments'
   - 'rate content'
   - 'search content'
