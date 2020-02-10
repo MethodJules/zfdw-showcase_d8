@@ -1,0 +1,5 @@
+name: Kompetenzword
+description: Dieses Modul stellt die Visualisierung eines Keywords zur Verfuegung
+type: module
+core: 8.x
+package: x.Navi

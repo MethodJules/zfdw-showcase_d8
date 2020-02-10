@@ -1,0 +1,15 @@
+kompetenzword.content:
+  path: '/kompetenzword'
+  defaults:
+    _controller: '\Drupal\kompetenzword\Controller\KompetenzwordController::content'
+  requirements:
+    _permission: 'access content'
+
+kompetenzword.settings:
+  path: '/admin/config/kompetenzword/settings'
+  defaults:
+    _form: '\Drupal\kompetenzword\Form\KompetenzwordConfigForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
