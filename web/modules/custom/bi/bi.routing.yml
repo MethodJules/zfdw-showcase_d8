@@ -1,0 +1,20 @@
+bi.content:
+  path: '/bi/content'
+  defaults:
+    _controller: '\Drupal\bi\Controller\BIController::content'
+  requirements:
+    _permission: 'access content'
+
+bi.visual:
+  path: '/bi/visual/{chartType}'
+  defaults:
+    _controller: '\Drupal\bi\Controller\BIController::chart'
+  requirements:
+    _permission: 'access content'
+
+bi.data:
+  path: '/bi/data/{vocabulary}'
+  defaults:
+    _controller: '\Drupal\bi\Controller\BIController::getData'
+  requirements:
+    _permission: 'access content'
