@@ -1,9 +1,0 @@
-kompetenzword_graphic:
-  version: 1.x
-  js:
-    js/kompetenzword.js: {}
-    js/d3.min.js: {}
-  dependencies:
-    - core/drupal
-    - core/jquery
-    - core/drupalSettings
