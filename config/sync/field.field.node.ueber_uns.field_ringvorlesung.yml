@@ -1,0 +1,23 @@
+uuid: 8aa0f1ec-ba4b-4620-a698-ee0b48046077
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ringvorlesung
+    - node.type.ueber_uns
+  module:
+    - text
+id: node.ueber_uns.field_ringvorlesung
+field_name: field_ringvorlesung
+entity_type: node
+bundle: ueber_uns
+label: Ringvorlesung
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

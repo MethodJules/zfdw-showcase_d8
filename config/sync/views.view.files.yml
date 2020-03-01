@@ -1033,7 +1033,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: All
           title_enable: true
           title: 'Dateiverwendungsinformationen für {{ arguments.fid }}'
           default_argument_type: fixed

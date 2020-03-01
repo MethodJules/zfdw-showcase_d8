@@ -10,9 +10,9 @@ palette:
   titleslogan: '#fffeff'
   text: '#3b3b3b'
   link: '#0071b3'
-logo: 'public://color/zfdw_barrio-5af767c5/logo.svg'
+logo: 'public://color/zfdw_barrio-b6c2b74a/logo.svg'
 stylesheets:
-  - 'public://color/zfdw_barrio-5af767c5/colors.css'
+  - 'public://color/zfdw_barrio-b6c2b74a/colors.css'
 files:
-  - 'public://color/zfdw_barrio-5af767c5/logo.svg'
-  - 'public://color/zfdw_barrio-5af767c5/colors.css'
+  - 'public://color/zfdw_barrio-b6c2b74a/logo.svg'
+  - 'public://color/zfdw_barrio-b6c2b74a/colors.css'

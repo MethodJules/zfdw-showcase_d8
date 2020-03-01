@@ -1,21 +1,21 @@
-uuid: 510a858c-ef29-47d5-893d-69abde14b28c
+uuid: f6d4b3a7-e488-4233-bc12-045f808b8c4c
 langcode: de
 status: true
 dependencies:
   config:
-    - field.storage.node.field_zeit
+    - field.storage.node.field_daterange
     - node.type.event
   module:
-    - datetime
-id: node.event.field_zeit
-field_name: field_zeit
+    - datetime_range
+id: node.event.field_daterange
+field_name: field_daterange
 entity_type: node
 bundle: event
 label: Zeitraum
-description: 'Bitte geben Sie hier den Zeitraum ein.'
+description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: datetime
+field_type: daterange

@@ -7,7 +7,9 @@ dependencies:
     - field.field.node.projekt.field_aufgabenverteilung
     - field.field.node.projekt.field_branche
     - field.field.node.projekt.field_datenbasis
+    - field.field.node.projekt.field_email
     - field.field.node.projekt.field_foerderung
+    - field.field.node.projekt.field_foerderungsbewilligung
     - field.field.node.projekt.field_forschungsergebnisse
     - field.field.node.projekt.field_forschungsfragen
     - field.field.node.projekt.field_keywords
@@ -23,7 +25,8 @@ dependencies:
     - field.field.node.projekt.field_zugehoerige_personen
     - node.type.projekt
   module:
-    - datetime
+    - datetime_range
+    - file
     - link
     - path
     - text
@@ -33,7 +36,7 @@ bundle: projekt
 mode: default
 content:
   body:
-    weight: 2
+    weight: 3
     type: text_textarea_with_summary
     settings:
       rows: 9
@@ -44,12 +47,12 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   field_aufgabenverteilung:
-    weight: 17
+    weight: 21
     type: text_textarea
     settings:
       rows: 10
@@ -57,7 +60,7 @@ content:
     third_party_settings: {  }
     region: content
   field_branche:
-    weight: 13
+    weight: 15
     type: entity_reference_autocomplete
     settings:
       match_operator: CONTAINS
@@ -67,15 +70,23 @@ content:
     third_party_settings: {  }
     region: content
   field_datenbasis:
-    weight: 16
+    weight: 20
     type: string_textarea
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_email:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
   field_foerderung:
-    weight: 3
+    weight: 4
     type: entity_reference_autocomplete
     settings:
       match_operator: CONTAINS
@@ -84,14 +95,21 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_foerderungsbewilligung:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
   field_forschungsergebnisse:
-    weight: 19
+    weight: 23
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   field_forschungsfragen:
-    weight: 12
+    weight: 14
     type: string_textfield
     settings:
       size: 60
@@ -99,7 +117,7 @@ content:
     third_party_settings: {  }
     region: content
   field_keywords:
-    weight: 14
+    weight: 16
     type: entity_reference_autocomplete
     settings:
       match_operator: CONTAINS
@@ -109,13 +127,13 @@ content:
     third_party_settings: {  }
     region: content
   field_laufzeit:
-    weight: 8
-    type: datetime_default
+    weight: 10
     settings: {  }
     third_party_settings: {  }
+    type: daterange_default
     region: content
   field_methoden_und_werkzeuge:
-    weight: 11
+    weight: 13
     type: text_textarea
     settings:
       rows: 5
@@ -123,7 +141,7 @@ content:
     third_party_settings: {  }
     region: content
   field_methodisches_vorgehen:
-    weight: 15
+    weight: 18
     type: string_textfield
     settings:
       size: 60
@@ -131,13 +149,13 @@ content:
     third_party_settings: {  }
     region: content
   field_projekt_institutionen:
-    weight: 6
+    weight: 8
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   field_projekt_link:
-    weight: 7
+    weight: 9
     type: link_default
     settings:
       placeholder_url: ''
@@ -145,7 +163,7 @@ content:
     third_party_settings: {  }
     region: content
   field_projektklasse:
-    weight: 9
+    weight: 11
     type: options_select
     settings: {  }
     third_party_settings: {  }
@@ -159,13 +177,13 @@ content:
     third_party_settings: {  }
     region: content
   field_projektleiter:
-    weight: 5
+    weight: 6
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   field_sonstiges:
-    weight: 18
+    weight: 22
     type: text_textarea
     settings:
       rows: 5
@@ -173,7 +191,7 @@ content:
     third_party_settings: {  }
     region: content
   field_zugehoerige_personen:
-    weight: 4
+    weight: 5
     type: options_select
     settings: {  }
     third_party_settings: {  }
@@ -187,7 +205,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 24
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -195,26 +213,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 17
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 25
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 19
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -222,7 +240,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 7
     settings:
       match_operator: CONTAINS
       size: 60

@@ -1,7 +1,9 @@
 uuid: 95be3941-8f39-46b0-870b-5990df08eaab
 langcode: de
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - media
 _core:
   default_config_hash: oz6NyPDAB4HB6N9hgH2LwNVtCd-sXbMG1fbn5KsRIDI
 name: 'Eingeschränktes HTML'
@@ -30,3 +32,12 @@ filters:
     weight: 0
     settings:
       filter_url_length: 72
+  media_embed:
+    id: media_embed
+    provider: media
+    status: false
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_media_types: {  }
+      allowed_view_modes: {  }

@@ -1,0 +1,19 @@
+uuid: f8f89959-af57-4e38-9e01-1436ed9d34c3
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_aktivitaeten_des_zentrums
+field_name: field_aktivitaeten_des_zentrums
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

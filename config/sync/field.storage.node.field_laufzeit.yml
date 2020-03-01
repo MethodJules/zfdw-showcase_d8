@@ -1,17 +1,18 @@
-uuid: b8177dd8-3928-4a84-a54f-348ad7fca623
-langcode: und
+uuid: 1a758174-f230-4133-9d60-936addb00d97
+langcode: de
 status: true
 dependencies:
   module:
-    - datetime
+    - datetime_range
     - node
 id: node.field_laufzeit
 field_name: field_laufzeit
 entity_type: node
-type: datetime
+type: daterange
 settings:
   datetime_type: date
-module: datetime
+  optional_end_date: 0
+module: datetime_range
 locked: false
 cardinality: 1
 translatable: true

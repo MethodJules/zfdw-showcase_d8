@@ -1,0 +1,19 @@
+uuid: 55851c86-4cb5-4c0c-b889-29dfaa48bf15
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.projekt
+id: node.projekt.field_email
+field_name: field_email
+entity_type: node
+bundle: projekt
+label: 'E-Mail Verwaltungkontakt'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

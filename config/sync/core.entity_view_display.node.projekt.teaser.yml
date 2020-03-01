@@ -8,7 +8,9 @@ dependencies:
     - field.field.node.projekt.field_aufgabenverteilung
     - field.field.node.projekt.field_branche
     - field.field.node.projekt.field_datenbasis
+    - field.field.node.projekt.field_email
     - field.field.node.projekt.field_foerderung
+    - field.field.node.projekt.field_foerderungsbewilligung
     - field.field.node.projekt.field_forschungsergebnisse
     - field.field.node.projekt.field_forschungsfragen
     - field.field.node.projekt.field_keywords
@@ -48,7 +50,9 @@ hidden:
   field_aufgabenverteilung: true
   field_branche: true
   field_datenbasis: true
+  field_email: true
   field_foerderung: true
+  field_foerderungsbewilligung: true
   field_forschungsergebnisse: true
   field_forschungsfragen: true
   field_keywords: true

@@ -1,0 +1,23 @@
+uuid: 2a275373-5a34-461c-b7bb-77005ac8b87b
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_aa
+    - node.type.promotion
+  module:
+    - link
+id: node.promotion.field_link_aa
+field_name: field_link_aa
+entity_type: node
+bundle: promotion
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,28 @@
+uuid: 58872215-e602-4a22-ab68-ac7b6b399966
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_verknuepfte_projekte_aa
+    - node.type.projekt
+    - node.type.promotion
+id: node.promotion.field_verknuepfte_projekte_aa
+field_name: field_verknuepfte_projekte_aa
+entity_type: node
+bundle: promotion
+label: 'Verknüpfte Projekte'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      projekt: projekt
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

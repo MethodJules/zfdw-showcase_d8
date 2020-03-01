@@ -1,0 +1,48 @@
+uuid: 94a4569f-4dc2-4f41-a854-f7219314f6b3
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.promotion.body
+    - field.field.node.promotion.field_link_aa
+    - field.field.node.promotion.field_methoden
+    - field.field.node.promotion.field_sonstiges_aa
+    - field.field.node.promotion.field_sperrvermerk
+    - field.field.node.promotion.field_status
+    - field.field.node.promotion.field_themensteller
+    - field.field.node.promotion.field_unternehmen
+    - field.field.node.promotion.field_verknuepfte_projekte_aa
+    - node.type.promotion
+  module:
+    - text
+    - user
+id: node.promotion.teaser
+targetEntityType: node
+bundle: promotion
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_link_aa: true
+  field_methoden: true
+  field_sonstiges_aa: true
+  field_sperrvermerk: true
+  field_status: true
+  field_themensteller: true
+  field_unternehmen: true
+  field_verknuepfte_projekte_aa: true
+  langcode: true
+  search_api_excerpt: true

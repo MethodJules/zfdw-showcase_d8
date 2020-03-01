@@ -7,7 +7,9 @@ dependencies:
     - field.field.node.projekt.field_aufgabenverteilung
     - field.field.node.projekt.field_branche
     - field.field.node.projekt.field_datenbasis
+    - field.field.node.projekt.field_email
     - field.field.node.projekt.field_foerderung
+    - field.field.node.projekt.field_foerderungsbewilligung
     - field.field.node.projekt.field_forschungsergebnisse
     - field.field.node.projekt.field_forschungsfragen
     - field.field.node.projekt.field_keywords
@@ -23,7 +25,8 @@ dependencies:
     - field.field.node.projekt.field_zugehoerige_personen
     - node.type.projekt
   module:
-    - datetime
+    - datetime_range
+    - file
     - link
     - text
     - user
@@ -41,83 +44,12 @@ content:
     region: content
   field_aufgabenverteilung:
     label: above
-    weight: 10
+    weight: 8
     type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_branche:
-    label: above
-    weight: 16
-    type: entity_reference_label
-    settings:
-      link: true
-    third_party_settings: {  }
-    region: content
-  field_datenbasis:
-    label: above
-    weight: 7
-    type: basic_string
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_foerderung:
-    label: above
-    weight: 11
-    type: entity_reference_label
-    settings:
-      link: true
-    third_party_settings: {  }
-    region: content
-  field_forschungsergebnisse:
-    label: above
-    weight: 15
-    type: entity_reference_label
-    settings:
-      link: true
-    third_party_settings: {  }
-    region: content
-  field_forschungsfragen:
-    label: above
-    weight: 4
-    type: string
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    region: content
-  field_keywords:
-    label: above
-    weight: 5
-    type: entity_reference_label
-    settings:
-      link: true
-    third_party_settings: {  }
-    region: content
-  field_laufzeit:
-    label: above
-    weight: 1
-    type: datetime_default
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    region: content
-  field_methoden_und_werkzeuge:
-    label: above
-    weight: 3
-    type: text_default
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_methodisches_vorgehen:
-    label: above
-    weight: 6
-    type: string
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    region: content
-  field_projekt_institutionen:
     label: above
     weight: 14
     type: entity_reference_label
@@ -125,9 +57,89 @@ content:
       link: true
     third_party_settings: {  }
     region: content
-  field_projekt_link:
+  field_datenbasis:
+    label: above
+    weight: 6
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_foerderung:
+    label: above
+    weight: 9
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_foerderungsbewilligung:
+    weight: 19
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_forschungsergebnisse:
+    label: above
+    weight: 13
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_forschungsfragen:
+    label: above
+    weight: 3
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_keywords:
+    label: above
+    weight: 4
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_laufzeit:
+    weight: 1
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: d.m.Y
+      separator: '-'
+    third_party_settings: {  }
+    type: daterange_custom
+    region: content
+  field_methoden_und_werkzeuge:
+    label: above
+    weight: 2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_methodisches_vorgehen:
+    label: above
+    weight: 5
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_projekt_institutionen:
     label: above
     weight: 12
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_projekt_link:
+    label: above
+    weight: 10
     type: link
     settings:
       trim_length: 80
@@ -139,7 +151,7 @@ content:
     region: content
   field_projektklasse:
     label: above
-    weight: 8
+    weight: 7
     type: entity_reference_label
     settings:
       link: true
@@ -147,7 +159,7 @@ content:
     region: content
   field_projektkuerzel:
     label: above
-    weight: 17
+    weight: 15
     type: string
     settings:
       link_to_entity: false
@@ -155,7 +167,7 @@ content:
     region: content
   field_projektleiter:
     label: above
-    weight: 19
+    weight: 17
     type: entity_reference_label
     settings:
       link: true
@@ -163,24 +175,25 @@ content:
     region: content
   field_sonstiges:
     label: above
-    weight: 13
+    weight: 11
     type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_zugehoerige_personen:
     label: above
-    weight: 18
+    weight: 16
     type: entity_reference_label
     settings:
       link: true
     third_party_settings: {  }
     region: content
   links:
-    weight: 100
+    weight: 18
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
+  field_email: true
   langcode: true
   search_api_excerpt: true
