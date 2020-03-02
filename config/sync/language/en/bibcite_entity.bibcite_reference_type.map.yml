@@ -1,0 +1,12 @@
+label: Map
+fields:
+  bibcite_custom1:
+    label: Scale
+  bibcite_secondary_title:
+    label: 'Series Title'
+  bibcite_pages:
+    label: Description
+  bibcite_type_of_work:
+    label: Type
+  bibcite_place_published:
+    label: City

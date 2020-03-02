@@ -1,0 +1,14 @@
+label: Personal
+fields:
+  bibcite_edition:
+    label: Description
+  bibcite_number_of_volumes:
+    label: 'Communication Number'
+  bibcite_number:
+    label: 'Folio Number'
+  bibcite_type_of_work:
+    label: Type
+  bibcite_place_published:
+    label: City
+  bibcite_alternate_title:
+    label: Abbreviation

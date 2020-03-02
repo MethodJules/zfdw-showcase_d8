@@ -1,0 +1,9 @@
+uuid: a7717f55-29a1-4f57-bfa6-0c85ac204483
+langcode: de
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: eBTwTf8DCRinIEhjzqSspsHdq6M8boaVrgC5mQhUALQ
+id: editor
+label: Editor
+weight: -1

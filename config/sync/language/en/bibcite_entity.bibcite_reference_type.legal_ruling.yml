@@ -1,0 +1,16 @@
+label: 'Legal Ruling'
+fields:
+  bibcite_volume:
+    label: 'Rule Number'
+  bibcite_section:
+    label: 'Section Number'
+  bibcite_number_of_volumes:
+    label: 'Session Number'
+  bibcite_number:
+    label: 'Start Page'
+  bibcite_date:
+    label: 'Date of Code Edition'
+  bibcite_issn:
+    label: 'Document Number'
+  bibcite_alternate_title:
+    label: Abbreviation

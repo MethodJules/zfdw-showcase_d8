@@ -1,0 +1,18 @@
+label: Bill
+fields:
+  bibcite_secondary_title:
+    label: Code
+  bibcite_volume:
+    label: 'Code Volume'
+  bibcite_edition:
+    label: Session
+  bibcite_section:
+    label: 'Code Section'
+  bibcite_number:
+    label: 'Bill Number'
+  bibcite_pages:
+    label: 'Code Pages'
+  bibcite_tertiary_title:
+    label: 'Legislative Body'
+  bibcite_original_publication:
+    label: History

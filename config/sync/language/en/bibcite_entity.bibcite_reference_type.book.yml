@@ -1,0 +1,12 @@
+label: Book
+fields:
+  author:
+    hint: 'Required author or editor'
+  bibcite_secondary_title:
+    label: 'Series Title'
+  bibcite_number:
+    label: 'Series Volume'
+  bibcite_place_published:
+    label: City
+  bibcite_alternate_title:
+    label: Abbreviation

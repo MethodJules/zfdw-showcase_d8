@@ -1,0 +1,8 @@
+label: 'Conference Paper'
+fields:
+  author:
+    hint: 'Required author'
+  bibcite_secondary_title:
+    label: 'Conference Name'
+  bibcite_place_published:
+    label: 'Conference Location'

@@ -1,0 +1,9 @@
+uuid: 0a878e52-1ad5-43e2-8a18-2c4e36e2403b
+langcode: de
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: W3bOuDa3tQB4RhwSZ18c0vmZZK7AOZfEW9Ez7PWMkrk
+id: subsidiary_author
+label: 'Subsidiary Author'
+weight: -7

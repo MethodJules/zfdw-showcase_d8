@@ -1,0 +1,34 @@
+label: Patent
+fields:
+  bibcite_custom2:
+    label: 'Issue Date'
+  bibcite_custom3:
+    label: 'Designated States'
+  bibcite_custom4:
+    label: Attorney/Agent
+  bibcite_custom5:
+    label: References
+  bibcite_custom6:
+    label: 'Legal Status'
+  bibcite_secondary_title:
+    label: 'Published Source'
+  bibcite_volume:
+    label: 'Patent Version Number'
+  bibcite_edition:
+    label: 'International Patent Classification'
+  bibcite_section:
+    label: 'International Patent Number'
+  bibcite_number:
+    label: 'Application Number'
+  bibcite_type_of_work:
+    label: 'Patent Type'
+  bibcite_publisher:
+    label: Assignee
+  bibcite_place_published:
+    label: Country
+  bibcite_issn:
+    label: 'Patent Number'
+  bibcite_tertiary_title:
+    label: 'International Title'
+  bibcite_original_publication:
+    label: 'Priority Numbers'

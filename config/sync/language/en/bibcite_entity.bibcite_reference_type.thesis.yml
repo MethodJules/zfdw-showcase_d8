@@ -1,0 +1,14 @@
+label: Thesis
+fields:
+  author:
+    hint: 'Required author'
+  bibcite_secondary_title:
+    label: 'Academic Department'
+  bibcite_volume:
+    label: Degree
+  bibcite_type_of_work:
+    label: 'Thesis Type'
+  bibcite_publisher:
+    label: University
+  bibcite_place_published:
+    label: City

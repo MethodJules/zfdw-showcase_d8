@@ -1,0 +1,5 @@
+processor: citeproc-php
+default_style: apa
+_core:
+  default_config_hash: xrKaN_2e7lR23yRaoflUaJktwsTkUG0r5Ux2mKNAiVs
+langcode: de

@@ -1,0 +1,12 @@
+label: 'Magazine Article'
+fields:
+  bibcite_secondary_title:
+    label: Magazine
+  bibcite_issue:
+    label: 'Issue Number'
+  bibcite_number_of_volumes:
+    label: Frequency
+  bibcite_type_of_work:
+    label: 'Type of Article'
+  bibcite_alternate_title:
+    label: 'Alternate Magazine'

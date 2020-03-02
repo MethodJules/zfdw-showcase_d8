@@ -1,0 +1,10 @@
+label: Classical
+fields:
+  bibcite_secondary_title:
+    label: 'Series Title'
+  bibcite_number:
+    label: 'Series Volume'
+  bibcite_type_of_work:
+    label: Type
+  bibcite_place_published:
+    label: City

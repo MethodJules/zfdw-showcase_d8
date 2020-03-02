@@ -1,0 +1,10 @@
+label: Unpublished
+fields:
+  bibcite_secondary_title:
+    label: 'Series Title'
+  bibcite_publisher:
+    label: Institution
+  bibcite_place_published:
+    label: City
+  bibcite_alternate_title:
+    label: Abbreviation

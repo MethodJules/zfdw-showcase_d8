@@ -83,7 +83,7 @@
         "drupal/optional_end_date": "^1.0",
         "drupal/paragraphs": "^1.10",
         "drupal/pathauto": "^1.6",
-        "drupal/rules": "^3.0@alpha",
+        "drupal/rules": "3.x-dev",
         "drupal/search_api": "^1.15",
         "drupal/search_api_solr": "^3.8",
         "drupal/smtp": "^1.0@beta",
