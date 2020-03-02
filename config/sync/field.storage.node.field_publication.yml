@@ -3,13 +3,14 @@ langcode: und
 status: true
 dependencies:
   module:
+    - bibcite_entity
     - node
 id: node.field_publication
 field_name: field_publication
 entity_type: node
 type: entity_reference
 settings:
-  target_type: node
+  target_type: bibcite_reference
 module: core
 locked: false
 cardinality: -1
