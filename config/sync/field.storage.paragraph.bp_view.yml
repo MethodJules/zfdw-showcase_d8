@@ -1,0 +1,23 @@
+uuid: 8e09b4c6-9601-4fd7-bc2f-aea73cb4e3f0
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - views
+    - viewsreference
+_core:
+  default_config_hash: wc7QqgkFlvik-sZ-n1ecI0lEwEfYviaonXo9Y33T78Q
+id: paragraph.bp_view
+field_name: bp_view
+entity_type: paragraph
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

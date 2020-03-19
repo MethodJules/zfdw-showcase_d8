@@ -1,19 +1,14 @@
 uuid: ee809819-c58f-4dae-9956-f95e226dd709
 langcode: de
 status: true
-dependencies:
-  module:
-    - media
+dependencies: {  }
 name: 'PHP code'
 format: php_code
 weight: 11
 filters:
-  media_embed:
-    id: media_embed
-    provider: media
-    status: false
-    weight: 100
-    settings:
-      default_view_mode: default
-      allowed_media_types: {  }
-      allowed_view_modes: {  }
+  filter_null:
+    id: filter_null
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }

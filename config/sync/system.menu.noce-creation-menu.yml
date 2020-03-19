@@ -1,0 +1,8 @@
+uuid: e539e24a-45d2-420e-b662-a699cbc83d7a
+langcode: de
+status: true
+dependencies: {  }
+id: noce-creation-menu
+label: 'Inhalte erstellen'
+description: ''
+locked: false

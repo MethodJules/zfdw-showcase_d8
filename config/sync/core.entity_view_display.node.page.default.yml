@@ -6,9 +6,12 @@ dependencies:
     - core.entity_view_display.comment.comment_node_page.default
     - field.field.node.page.body
     - field.field.node.page.comment_node_page
+    - field.field.node.page.field_paragrpahs
     - node.type.page
   module:
     - comment
+    - ds
+    - entity_reference_revisions
     - text
     - user
 _core:
@@ -34,9 +37,22 @@ content:
       pager_id: 0
     third_party_settings: {  }
     region: content
+  field_paragrpahs:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    region: content
   links:
     weight: 101
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   langcode: true
   search_api_excerpt: true

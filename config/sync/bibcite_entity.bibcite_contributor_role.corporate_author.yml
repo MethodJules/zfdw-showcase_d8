@@ -1,9 +1,0 @@
-uuid: a9c886aa-b0c5-499f-b53c-7a997f8dd9fd
-langcode: de
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: sWzigMCjlbvywAZX5IlcjeeqfYVwfqIm9QutfVJt2ZU
-id: corporate_author
-label: 'Corporate Author'
-weight: -6

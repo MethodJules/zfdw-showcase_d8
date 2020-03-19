@@ -1,19 +1,14 @@
 uuid: bed66b7f-f356-43f4-bad1-74308bba6cf3
 langcode: de
 status: true
-dependencies:
-  module:
-    - media
+dependencies: {  }
 name: 'Display Suite code'
 format: ds_code
 weight: 12
 filters:
-  media_embed:
-    id: media_embed
-    provider: media
-    status: false
-    weight: 100
-    settings:
-      default_view_mode: default
-      allowed_media_types: {  }
-      allowed_view_modes: {  }
+  filter_null:
+    id: filter_null
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }

@@ -1,0 +1,25 @@
+uuid: e7167a7d-c040-4b8f-b1d9-9cba58b73dcb
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:aae1b22b-fa4d-4c47-8f44-f6c2613ab12b'
+  module:
+    - block_content
+  theme:
+    - zfdw_barrio
+id: x.navi
+theme: zfdw_barrio
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:aae1b22b-fa4d-4c47-8f44-f6c2613ab12b'
+settings:
+  id: 'block_content:aae1b22b-fa4d-4c47-8f44-f6c2613ab12b'
+  label: x.Navi
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

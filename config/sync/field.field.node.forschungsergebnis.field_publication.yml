@@ -3,20 +3,8 @@ langcode: de
 status: true
 dependencies:
   config:
-    - bibcite_entity.bibcite_reference_type.book
-    - bibcite_entity.bibcite_reference_type.book_chapter
-    - bibcite_entity.bibcite_reference_type.conference_paper
-    - bibcite_entity.bibcite_reference_type.conference_proceedings
-    - bibcite_entity.bibcite_reference_type.journal
-    - bibcite_entity.bibcite_reference_type.journal_article
-    - bibcite_entity.bibcite_reference_type.magazine_article
-    - bibcite_entity.bibcite_reference_type.presentation
-    - bibcite_entity.bibcite_reference_type.report
-    - bibcite_entity.bibcite_reference_type.thesis
-    - bibcite_entity.bibcite_reference_type.unpublished
-    - bibcite_entity.bibcite_reference_type.web_article
-    - bibcite_entity.bibcite_reference_type.website
     - field.storage.node.field_publication
+    - node.type.biblio
     - node.type.forschungsergebnis
 id: node.forschungsergebnis.field_publication
 field_name: field_publication
@@ -29,25 +17,14 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:bibcite_reference'
+  handler: 'default:node'
   handler_settings:
     target_bundles:
-      book: book
-      book_chapter: book_chapter
-      conference_paper: conference_paper
-      conference_proceedings: conference_proceedings
-      journal: journal
-      journal_article: journal_article
-      magazine_article: magazine_article
-      presentation: presentation
-      report: report
-      thesis: thesis
-      unpublished: unpublished
-      web_article: web_article
-      website: website
+      biblio: biblio
     sort:
-      field: title
+      field: _none
       direction: ASC
-    auto_create: false
-    auto_create_bundle: web_article
+    behaviors:
+      views-select-list:
+        status: 0
 field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 21657704-4f72-4cdb-9142-67f798cc83a9
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_background
+    - paragraphs.paragraphs_type.bp_blank
+  module:
+    - options
+_core:
+  default_config_hash: g2TNli_sUOmtMoVec1i8K36RMWZlwgvB6la8VK_jmLE
+id: paragraph.bp_blank.bp_background
+field_name: bp_background
+entity_type: paragraph
+bundle: bp_blank
+label: Background
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

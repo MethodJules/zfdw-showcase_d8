@@ -13,7 +13,7 @@ _core:
 id: zfdw_barrio_account_menu
 theme: zfdw_barrio
 region: sidebar_first
-weight: -2
+weight: -3
 provider: null
 plugin: 'system_menu_block:account'
 settings:

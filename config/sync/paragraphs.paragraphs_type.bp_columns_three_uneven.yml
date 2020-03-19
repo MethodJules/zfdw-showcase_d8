@@ -1,0 +1,12 @@
+uuid: 493dab1a-c241-48f5-9979-5cb9d9e6933e
+langcode: de
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nZmfe8pDq4A5BPRIedVEWl7JG5SvoO17LyEFUeQdrKk
+id: bp_columns_three_uneven
+label: 'Columns (Three Uneven)'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }
