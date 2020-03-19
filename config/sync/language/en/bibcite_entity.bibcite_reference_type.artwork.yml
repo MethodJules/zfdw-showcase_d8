@@ -1,6 +1,0 @@
-label: Artwork
-fields:
-  bibcite_pages:
-    label: Description
-  bibcite_place_published:
-    label: City

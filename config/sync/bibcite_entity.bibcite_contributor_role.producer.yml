@@ -1,9 +1,0 @@
-uuid: 7fbdbee2-8bf1-4296-914b-d5a679025ee5
-langcode: de
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: FZoLajtbsqO2nGJN9qKyT1LNS060HMvm4yN3-nndchg
-id: producer
-label: Producer
-weight: 2

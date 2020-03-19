@@ -4,10 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
-    - field.field.node.event.field_daterange
+    - field.field.node.event.field_zeit
     - node.type.event
   module:
-    - datetime_range
+    - datetime
     - path
     - text
 id: node.event.default
@@ -31,11 +31,11 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_daterange:
-    weight: 121
+  field_zeit:
+    weight: 32
+    type: datetime_default
     settings: {  }
     third_party_settings: {  }
-    type: daterange_default
     region: content
   langcode:
     type: language_select

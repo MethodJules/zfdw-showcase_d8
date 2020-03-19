@@ -1,9 +1,0 @@
-uuid: 3c5e2b40-fc0e-4b36-9769-d8e4388b6a79
-langcode: de
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: q5pwxm6I_CcKFjbOywSuLW32kYjc4zj3F68dR_UZrxg
-id: issuing_organization
-label: 'Issuing Organization'
-weight: 4

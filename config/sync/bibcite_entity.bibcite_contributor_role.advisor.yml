@@ -1,9 +1,0 @@
-uuid: 54931c33-71e0-4510-a7d3-b49b314c90d5
-langcode: de
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: bzMhHDZ7HNRnHSCzzHKSN9AbOkiJC3nNS2XOUijy7SA
-id: advisor
-label: Advisor
-weight: 7

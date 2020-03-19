@@ -4,10 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
-    - field.field.node.event.field_daterange
+    - field.field.node.event.field_zeit
     - node.type.event
   module:
-    - datetime_range
+    - datetime
     - text
     - user
 id: node.event.default
@@ -22,15 +22,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_daterange:
-    weight: 101
+  field_zeit:
     label: above
+    weight: 1
+    type: datetime_default
     settings:
-      separator: '-'
       format_type: medium
       timezone_override: ''
     third_party_settings: {  }
-    type: daterange_default
     region: content
   links:
     weight: 100

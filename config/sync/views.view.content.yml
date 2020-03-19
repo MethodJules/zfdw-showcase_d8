@@ -183,7 +183,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Inhaltstyp
+          label: 'Content type'
           exclude: false
           alter:
             alter_text: false
@@ -410,7 +410,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: Inhaltstyp
+            label: 'Content type'
             description: ''
             use_operator: false
             operator: type_op

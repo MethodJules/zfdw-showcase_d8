@@ -1,9 +1,0 @@
-uuid: 518904e6-a1e7-4e60-b68f-655154bffccf
-langcode: de
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: nSabfhhl8EP7fFQBYgvJSVlZzVS2fUNzysXu2q9G6uk
-id: counsel
-label: Counsel
-weight: 0

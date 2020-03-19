@@ -1,4 +1,4 @@
-uuid: d4994574-1bac-42b3-9f0e-7368f10fbf01
+uuid: 67352e16-71e7-491c-adc4-71fa87ee062d
 langcode: de
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_laufzeit
     - node.type.projekt
   module:
-    - datetime_range
+    - datetime
 id: node.projekt.field_laufzeit
 field_name: field_laufzeit
 entity_type: node
@@ -18,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: daterange
+field_type: datetime
