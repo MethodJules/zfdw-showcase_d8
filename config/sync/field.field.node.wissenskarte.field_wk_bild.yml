@@ -1,38 +1,38 @@
-uuid: 2bf5a62d-0828-44b6-b83f-b032b14fe654
-langcode: de
+uuid: fcd153e3-4715-41c9-b6f2-7eea0c8120f6
+langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_wk_bild
     - node.type.wissenskarte
   module:
-    - image
+    - knowledgemap
 id: node.wissenskarte.field_wk_bild
 field_name: field_wk_bild
 entity_type: node
 bundle: wissenskarte
 label: Bild
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  alt_field: false
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: 0
+  alt_field_required: 0
+  title_field: 0
+  title_field_required: 0
   default_image:
+    uuid: ''
     alt: ''
     title: ''
     width: null
     height: null
-    uuid: ''
-  file_directory: slideshow_wk
-  file_extensions: 'png jpg jpeg'
-  max_filesize: ''
-  max_resolution: ''
-  min_resolution: ''
-  title_field: false
-  alt_field_required: true
-  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
-field_type: image
+field_type: knowledgemap_field_type

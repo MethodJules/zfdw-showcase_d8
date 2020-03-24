@@ -156,10 +156,6 @@ datasource_settings:
     languages:
       default: true
       selected: {  }
-  'entity:user':
-    languages:
-      default: true
-      selected: {  }
 processor_settings:
   add_url:
     weights:

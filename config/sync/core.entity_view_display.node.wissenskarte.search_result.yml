@@ -7,11 +7,11 @@ dependencies:
     - field.field.node.wissenskarte.comment_node_wissenskarte
     - field.field.node.wissenskarte.field_beschreibung
     - field.field.node.wissenskarte.field_internal_reference
+    - field.field.node.wissenskarte.field_markierte_bereiche
     - field.field.node.wissenskarte.field_tag_combined
     - field.field.node.wissenskarte.field_wk_bild
     - node.type.wissenskarte
   module:
-    - image
     - text
     - user
 id: node.wissenskarte.search_result
@@ -27,15 +27,6 @@ content:
       trim_length: 600
     third_party_settings: {  }
     region: content
-  field_wk_bild:
-    label: hidden
-    weight: 4
-    type: image
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     settings: {  }
@@ -44,6 +35,8 @@ content:
 hidden:
   comment_node_wissenskarte: true
   field_internal_reference: true
+  field_markierte_bereiche: true
   field_tag_combined: true
+  field_wk_bild: true
   langcode: true
   search_api_excerpt: true
