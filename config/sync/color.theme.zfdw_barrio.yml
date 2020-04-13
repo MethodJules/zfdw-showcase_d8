@@ -8,11 +8,11 @@ palette:
   button: '#007bff'
   buttonhover: '#0256b1'
   titleslogan: '#fffeff'
-  text: '#3b3b3b'
+  text: '#4d4d4d'
   link: '#0071b3'
-logo: 'public://color/zfdw_barrio-c9bb35f1/logo.svg'
+logo: 'public://color/zfdw_barrio-cc723ed0/logo.svg'
 stylesheets:
-  - 'public://color/zfdw_barrio-c9bb35f1/colors.css'
+  - 'public://color/zfdw_barrio-cc723ed0/colors.css'
 files:
-  - 'public://color/zfdw_barrio-c9bb35f1/logo.svg'
-  - 'public://color/zfdw_barrio-c9bb35f1/colors.css'
+  - 'public://color/zfdw_barrio-cc723ed0/logo.svg'
+  - 'public://color/zfdw_barrio-cc723ed0/colors.css'

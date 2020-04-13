@@ -16,7 +16,7 @@ html { overflow-y: scroll; width: 100%;}
 a, a *, .animate { -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s;  }
 .animate_fast { -webkit-transition: all 0.3s; -moz-transition: all 0.2s; -ms-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
 .animate_sub_fast * { -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -ms-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
-body { min-width: 300px; overflow-x: hidden; color: #000; font-family: 'HamburgSans', Arial, Verdana, sans-serif; background: #FFF; font-size: 14px; line-height: 1.5em;  }
+body { min-width: 300px; overflow-x: hidden; color: #4d4d4d; font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif; font-weight: 400; background: #FFF; font-size: 14px; line-height: 1.5em;  }
 .fas, .far, .fab { -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none; transition: none; }
 
 h1, h2, h3, h4, h5 { font-family: 'HamburgSans', Arial, Verdana, sans-serif; font-weight: bold; text-align: left; background: none; color: #000; border-left: none; font-size: 40px; margin: 0 0 35px 0; padding: 0; }
